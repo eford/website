@@ -1,4 +1,4 @@
-@def title = "Eric B. Ford"
+@def title = "Homepage"
 ---
 {{insert head.html}}
 {{insert nav.html}}
@@ -11,7 +11,7 @@
 <div class="hero-section">
      <div class="hero-image">
         <!-- Replace 'your-image.jpg' with your image source and 'Alt text' with appropriate text -->
-        <img src="https://eford.netlify.app/authors/eford/avatar_hufee99b2a31eaf53c98533d43c1bec5d3_122698_250x250_fill_q90_lanczos_center.jpg" alt="Headshot of Eric Ford" style="max-width: 100%; height: auto; border-radius: 50%;">
+        <img src="/assets/images/people/eric_ford.jpg" alt="Headshot of Eric Ford" style="max-width: 100%; height: auto; border-radius: 50%;">
     </div>
   <div class="hero-text">
     <h1 style="border-bottom:none; margin-bottom:0.1em;">Eric B. Ford</h1>

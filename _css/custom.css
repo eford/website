@@ -253,4 +253,19 @@ code {
 }
 pre code { padding: 1rem; background: #f8f9fa; }
 
+/* ── Footer ─────────────────────────────────────────── */
+.site-footer {
+  /* Match the width and centering of .site-main / .franklin-content */
+  max-width: var(--content-width, 900px);
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
 
+  /* Inherit the same font stack as the rest of the page */
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #555;
+
+  /* Subtle top border to visually separate from content */
+  border-top: 1px solid #e0e0e0;
+  margin-top: 2rem;
+}
