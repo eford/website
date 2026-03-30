@@ -14,7 +14,7 @@
   <img src="/assets/images/people/eric_ford.jpg" alt="Eric Ford" class="member-image">
   <div class="member-text">
   <h2><a href="/">Eric Ford</a></h2>
-  <p class="member-role">Distinguished Professor & ICDS Director of Research</p>
+  <p class="member-role">Distinguished Professor</p>
   <p></p>
   </div>
 </div>
@@ -28,6 +28,10 @@
   <h3><a href="https://science.psu.edu/astro/people/axd5702">Anne Dattilo</a></h3>
   <p class="member-role">CEHW Postdoctoral Fellow & ICDS Rising Researcher</p>
   <p>Exploring new approaches to Simulation-based Inference for characterizing exoplanet populations.</p>
+  <p>
+    <a href="https://aedattilo.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
+    <a href="https://github.com/aedattilo" title="GitHub"><i class="fab fa-github"></i></a>
+  </p>
   </div>
 </div>
 
@@ -37,6 +41,9 @@
     <h3><a href="https://science.psu.edu/astro/people/rbf5378">Rachel Fernandes</a></h3>
   <p class="member-role">CEHW Postdoctoral Fellow</p>
   <p>Connecting diverse observations of planetary systems to fundamental theories in planet formation. Currently working on detecting transiting planets in young clusters and comparing demographics with Kepler's Gyr-old population. <br>Co-Chair of NASA's ExoPAG Exoplanet Demographics Science Interest Group 2 (SIG2).</p>
+  <p>
+    <a href="https://rbfernandes.wixsite.com/rbfernandes" title="Personal Website"><i class="fa-solid fa-house"></i></a>
+  </p>
   </div>
 </div>
 
@@ -44,9 +51,12 @@
   <img src="/assets/images/people/laura_flagg.png" alt="Laura Flagg" class="member-image">
   <div class="member-text">
   <h3><a href="https://science.psu.edu/astro/people/lvf5358">Laura Flagg</a></h3>
-  
   <p class="member-role">CEHW Postdoctoral Fellow</p>
   <p>Characterizing exoplanet atmospheres with high-resolution spectroscopy, young exoplanets, and gas dispersal timescales in circumstellar disks.</p>
+  <p>
+    <a href="https://lauraflagg.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
+    <a href="https://github.com/lauraflagg" title="GitHub"><i class="fab fa-github"></i></a>
+  </p>
   </div>
 </div>
 
@@ -58,6 +68,9 @@
   <p>Terrestrial planets transiting M dwarfs and constraints on the occurrence of such worlds.  
   Fast algorithms for searching for transits.<br>
   Data-driven methods for simultaneously modeling stellar and telluric variability.</p>
+  <p>
+    <a href="https://scholar.harvard.edu/kristoment" title="Personal Website"><i class="fa-solid fa-house"></i></a>
+  </p>
   </div>
 </div>
 
@@ -70,9 +83,14 @@
 <div class="member-card">
   <img src="/assets/images/people/evan_fitzmaurice.png" alt="Evan Fitzmaurice" class="member-image">
   <div class="member-text">
-  <h3><a href="https://science.psu.edu/astro/people/exf5296">Evan Fitzmaurice</a></h3>
+  <h3><a href="https://evanlfitz.github.io/">Evan Fitzmaurice</a></h3>
   <p class="member-role">PhD Student</p>
   <p>Characterization of exoplanets and brown dwarfs using radial velocity observations with HPF and NEID, and astrometry from Gaia.</p>
+  <p>
+    <a href="https://evanlfitz.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
+    <a href="https://github.com/evanlfitz" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/evanfitzmaurice/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  </p>
 </div></div>
 
 <div class="member-card">
@@ -81,6 +99,9 @@
   <h3><a href="https://science.psu.edu/astro/people/lfb5454">Lucas Brefka</a></h3>
   <p class="member-role">PhD Student</p>
   <p>Formation of planetary systems, particularly systems that look nothing like our own. Computer simulations of planetesimal formation conditions and their effects on final planet properties.</p>
+  <p>
+    <a href="https://github.com/lucasbrefka" title="GitHub"><i class="fab fa-github"></i></a>
+  </p>
 </div></div>
 
 <div class="member-card">
@@ -100,7 +121,6 @@
   </div>
 </div></div>
 ~~~
-
 ---
 
 # Former Group Members
@@ -138,6 +158,18 @@
   <p>
     <a href="https://briannazawadzki.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
     <a href="https://scholar.google.com/citations?user=3gY3XVMAAAAJ" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+  </p>
+  </div>
+</div>
+
+<div class="member-card">
+  <img src="/assets/images/people/jacob_luhn.jpg" alt="Jacob Luhn" class="member-image">
+  <div class="member-text">
+  <h3><a href="https://jacobluhn.github.io/">Jacob Luhn</a></h3>
+  <p class="member-role">PhD 2021, PSU, chair: Jason Wright<br>NASA Postdoctoral Fellow, JPL</p>
+  <p>
+    <a href="https://jacobluhn.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
+    <a href="https://github.com/JacobLuhn" title="GitHub"><i class="fab fa-github"></i></a>
   </p>
   </div>
 </div>
@@ -377,8 +409,6 @@
   </div>
 </div>
 ~~~
-
-*TODO:*  Create a page for each former advisee.  Add links to LinkedIn, Google Scholar, GitHub, NASA ADS, etc.  Add summary of major interests.  Add next position after graduating and most recent known position.
 
 ---
 # Collaborations
