@@ -1,0 +1,80 @@
+@def title = "Eric B. Ford"
+---
+{{insert head.html}}
+{{insert nav.html}}
+
+~~~
+<main class="site-main">
+<div class="franklin-content">
+
+<!-- ===== Hero Section ===== -->
+<div class="hero-section">
+     <div class="hero-image">
+        <!-- Replace 'your-image.jpg' with your image source and 'Alt text' with appropriate text -->
+        <img src="https://eford.netlify.app/authors/eford/avatar_hufee99b2a31eaf53c98533d43c1bec5d3_122698_250x250_fill_q90_lanczos_center.jpg" alt="Headshot of Eric Ford" style="max-width: 100%; height: auto; border-radius: 50%;">
+    </div>
+  <div class="hero-text">
+    <h1 style="border-bottom:none; margin-bottom:0.1em;">Eric B. Ford</h1>
+    <p class="subtitle">Distinguished Professor of Astronomy &amp; Astrophysics</p>
+    <p class="affiliations">
+      <a href="https://science.psu.edu/astro">Department of Astronomy &amp; Astrophysics</a><br>
+      <a href="https://icds.psu.edu/">Institute for Computational &amp; Data Sciences</a><br>
+      <a href="https://exoplanets.psu.edu/">Center for Exoplanets &amp; Habitable Worlds</a><br>
+      <a href="https://sites.psu.edu/astrostatistics/">Center for Astrostatistics &amp; Astroinformatics</a><br>
+      <a href="https://astrobiology.psu.edu/">Astrobiology Research Center</a><br>
+      <a href="https://www.psu.edu/">Penn State University</a>
+    </p>
+    <div class="social-icons">
+      <a href="mailto:ebf11@psu.edu" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Ford%2C+Eric+B.%22&sort=date+desc" title="NASA ADS"><i class="ai ai-ads"></i></a>
+      <a href="https://scholar.google.com/citations?user=TePFO-YAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://orcid.org/0000-0001-6545-639X" title="ORCID"><i class="ai ai-orcid"></i></a>
+      
+      <a href="https://github.com/eford" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/eric-ford-63a3a31b" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+~~~
+
+## About
+My research centers around **exoplanets**, with long-term goals of improving our understanding of planet formation and the dynamical evolution of planetary systems. My research group includes both theoretical modeling of planetary systems and interpretation of exoplanet observations. I emphasize the interface between theory and observation, including techniques for characterizing extrasolar planets, the statistical analysis of extrasolar planet observations, methodology for exoplanet demographics, and the efficient design of extrasolar planet surveys. I collaborate with leading planet surveys, including NASA’s [Kepler mission](https://science.nasa.gov/mission/kepler/), the [Habitable Zone Planet Finder (HPF)](https://hpf.psu.edu/) and [NEID]((https://neid.psu.edu/)) science teams. Ultimately, my research aims to improve our understanding of planet formation & evolution, both in our Solar System and in general.
+
+## Research Interests
+~~~
+<div class="card-grid">
+  <div class="card">
+    <h3>🔭 <a href="research/#extremely_precise_radial_velocity_surveys">Extremely Precise Radial Velocities</a></h3>
+    <p>Developing methods to detect Earth-like planets using next-generation spectrographs like NEID and HPF, including data-driven methods to mitigate stellar variability using Sun-as-a-star observations.</p>
+  </div>
+  <div class="card">
+    <h3>📊 <a href="research/#exoplanet_demographics">Exoplanet Demographics</a></h3>
+    <p>Measuring occurrence rates of exoplanets and the planetary systesm architectures using Bayesian methods, Approximate Bayesian Computing, and simulation-based inference.</p>
+  </div>
+  <div class="card">
+    <h3>🪐 <a href="research/#orbital_dynamics_planet_formation">Orbital Dynamics &amp; Formation</a></h3>
+    <p>Planet-planet scattering, secular evoluation of multiple planet systems, orbital migration, and planets in binary systems, and the dynamical processes that shape planetary system architectures.</p>
+  </div>
+  <div class="card">
+    <h3>📈 <a href="research/#astrostatistics_data_science_methods">Astrostatistics &amp; Astroinformatics</a></h3>
+    <p>Bayesian inference, MCMC methods, Gaussian processes, and Approximate Bayesian Computation, and Scientific Machine Learning for improving exoplanet science.</p>
+  </div>
+  <div class="card">
+    <h3>💻 <a href="research/#high-performance_computing_for_astrophysics">High-Performance Computing</a></h3>
+    <p>GPU computing, parallel algorithms, and the Julia programming language for computationally intensive astrophysical problems.</p>
+  </div>
+  <div class="card">
+    <h3>🌍 <a href="research/#astrobiology">Life in the Universe</a></h3>
+    <p>Placing our Solar System in context and understanding the prospects for habitable worlds around other stars.</p>
+  </div>
+</div>
+~~~
+
+
+
+~~~
+</div>
+</main>
+~~~
+

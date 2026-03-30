@@ -1,0 +1,256 @@
+/* ===== Penn State Color Palette ===== */
+:root {
+  --psu-navy:      #001E44;
+  --psu-blue:      #1E407C;
+  --psu-light-blue:#96BEE6;
+  --psu-white:     #FFFFFF;
+  --psu-gray:      #6A7B8B;
+  --psu-light-gray:#F0F2F5;
+  --psu-accent:    #009CDE;
+  --text-primary:  #1a1a2e;
+  --text-secondary:#4a4a5a;
+  --max-width:     900px;
+  --header-height: 64px;
+}
+
+/* ===== Typography ===== */
+body {
+  font-family: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-primary);
+  line-height: 1.7;
+  background: var(--psu-white);
+}
+h1, h2, h3, h4 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  color: var(--psu-navy);
+  line-height: 1.3;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+}
+h1 { font-size: 2rem; border-bottom: 3px solid var(--psu-accent); padding-bottom: 0.3em; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+p  { margin: 0.8em 0; }
+
+/* ===== Header / Navigation ===== */
+.site-header {
+  background: var(--psu-navy);
+  color: var(--psu-white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+}
+.site-brand {
+  color: var(--psu-white);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: auto;
+}
+.site-brand:hover { text-decoration: none; opacity: 0.9; }
+.nav-links { display: flex; gap: 0.2rem; }
+.nav-link {
+  color: rgba(255,255,255,0.85);
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+.nav-link:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.nav-toggle { display: none; background: none; border: none; color: #fff; font-size: 1.3rem; cursor: pointer; }
+
+/* ===== Main Content ===== */
+.site-main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+.franklin-content { max-width: 100%; }
+
+/* ===== Hero / About Section ===== */
+.hero-section {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+.hero-photo {
+  width: 200px;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.hero-text h1 { margin-top: 0; border-bottom: none; }
+.hero-text .subtitle {
+  font-size: 1.1rem;
+  color: var(--psu-blue);
+  font-weight: 600;
+  margin: -0.3em 0 0.8em;
+}
+.hero-text .affiliations {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+}
+.hero-text .affiliations a { color: var(--psu-blue); }
+
+/* Social icons */
+.social-icons { display: flex; gap: 0.8rem; margin: 1rem 0; }
+.social-icons a {
+  color: var(--psu-blue);
+  font-size: 1.4rem;
+  transition: color 0.2s;
+}
+.social-icons a:hover { color: var(--psu-accent); text-decoration: none; }
+
+/* ===== Cards ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.card {
+  background: var(--psu-light-gray);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border-left: 4px solid var(--psu-accent);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+.card h2 { margin-top: 0; font-size: 1.5rem; }
+.card h3 { margin-top: 0; font-size: 1.1rem; }
+.card p { font-size: 0.92rem; color: var(--text-secondary); }
+
+/* ===== Group Member Cards ===== */
+.member-card {
+  background: var(--psu-light-gray);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--psu-blue);
+
+  display: flex; /* Creates the side-by-side layout */
+  align-items: center; /* Vertically centers text with image */
+  justify-content: space-between; /* Pushes text left, image right */
+  gap: 10px; /* Adds space between text and image */
+ /*  border: 1px solid #ccc; /* Optional: adds a border */
+  padding: 15px; /* Optional: adds padding */
+}
+.member-image {
+  max-width: 150px; /* Adjusts image size */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Optional: makes image circular */
+}
+/* Optional: Ensures text doesn't hit the edge */
+.member-text {
+  display: grid; /* Creates the side-by-side layout */
+  align-items: left; /* Vertically centers text with image */
+  flex: 1;
+  font-weight: 600;
+  font-size: 1.0rem;
+}
+.member-card h2 { margin: 0 0 0.2em; font-size: 1.15rem; }
+.member-card h3 { margin: 0 0 0.2em; font-size: 1.05rem; }
+
+.member-card .member-role {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0 0 0.5em;
+}
+
+
+
+/* ===== Course Cards ===== */
+.course-card {
+  background: var(--psu-light-gray);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--psu-accent);
+}
+.course-card h3 { margin: 0 0 0.3em; font-size: 1.05rem; }
+.course-card .course-meta {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5em;
+}
+
+/* ===== Publication List ===== */
+.pub-entry {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.pub-entry:last-child { border-bottom: none; }
+.pub-entry .pub-title {
+  font-weight: 600;
+  color: var(--psu-navy);
+}
+.pub-entry .pub-authors {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+.pub-entry .pub-year {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+
+}
+.pub-entry .pub-venue {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* ===== Contact Info ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+.contact-block i { color: var(--psu-accent); margin-right: 0.5rem; }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-section { flex-direction: column; align-items: center; text-align: center; }
+  .hero-photo { width: 160px; min-width: 160px; }
+  .social-icons { justify-content: center; }
+  .nav-toggle { display: block; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: var(--header-height); left: 0; right: 0; background: var(--psu-navy); padding: 1rem; }
+  .nav-links.open { display: flex; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== Code blocks ===== */
+pre code {
+  display: block;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+code {
+  background: #f0f2f5;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+pre code { padding: 1rem; background: #f8f9fa; }
+
+
