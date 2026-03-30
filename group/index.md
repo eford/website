@@ -11,7 +11,7 @@
 
 ~~~
 <div class="member-card">
-  <img src="/assets/images/avatar.jpg" alt="Eric Ford" class="member-image">
+  <img src="/assets/images/people/eric_ford.jpg" alt="Eric Ford" class="member-image">
   <div class="member-text">
   <h2><a href="/">Eric Ford</a></h2>
   <p class="member-role">Distinguished Professor & ICDS Director of Research</p>
@@ -23,7 +23,7 @@
 ## Postdoctoral Researchers
 ~~~
 <div class="member-card">
-  <img src="https://ecos-appdev-production.s3.amazonaws.com/science_site/s3fs-public/styles/f_story_image/public/2025-08/Datillo.jpg?h=5d45f1d2&itok=LWH3VuKb" alt="Anne Datillo" class="member-image">
+  <img src="/assets/images/people/anne_datillo.jpg" alt="Anne Datillo" class="member-image">
   <div class="member-text">
   <h3><a href="https://science.psu.edu/astro/people/axd5702">Anne Dattilo</a></h3>
   <p class="member-role">CEHW Postdoctoral Fellow & ICDS Rising Researcher</p>
@@ -32,7 +32,7 @@
 </div>
 
 <div class="member-card">
-<img src="https://ecos-appdev-production.s3.amazonaws.com/science_site/s3fs-public/styles/f_story_image/public/2023-08/RBF.jpg?h=def9aaa0&itok=roLEIGSO" alt="Rachel Fernandes" class="member-image">
+<img src="/assets/images/people/rachel_fernandes.jpg" alt="Rachel Fernandes" class="member-image">
   <div class="member-text">
     <h3><a href="https://science.psu.edu/astro/people/rbf5378">Rachel Fernandes</a></h3>
   <p class="member-role">CEHW Postdoctoral Fellow</p>
@@ -41,7 +41,7 @@
 </div>
 
 <div class="member-card">
-  <img src="https://lauraflagg.github.io/images/me4_crop.png" alt="Laura Flagg" class="member-image">
+  <img src="/assets/images/people/laura_flagg.png" alt="Laura Flagg" class="member-image">
   <div class="member-text">
   <h3><a href="https://science.psu.edu/astro/people/lvf5358">Laura Flagg</a></h3>
   
@@ -51,7 +51,7 @@
 </div>
 
 <div class="member-card">
-  <img src="https://ecos-appdev-production.s3.amazonaws.com/science_site/s3fs-public/styles/f_story_image/public/2023-08/Ment.jpg?h=1acc07e7&itok=n7mvOcGB" alt="Kristo Ment" class="member-image">
+  <img src="/assets/images/people/kristo_ment.jpg" alt="Kristo Ment" class="member-image">
   <div class="member-text">
   <h3><a href="https://science.psu.edu/astro/people/kxm821">Kristo Ment</a></h3>
   <p class="member-role">CEHW Postdoctoral Fellow</p>
@@ -68,7 +68,7 @@
 
 ~~~
 <div class="member-card">
-  <img src="https://ecos-appdev-production.s3.amazonaws.com/science_site/s3fs-public/styles/f_story_image/public/2022-09/astro%20fitzmaurice.PNG?h=6ebd9c60&itok=Q2fcicl_" alt="Evan Fitzmaurice" class="member-image">
+  <img src="/assets/images/people/evan_fitzmaurice.png" alt="Evan Fitzmaurice" class="member-image">
   <div class="member-text">
   <h3><a href="https://science.psu.edu/astro/people/exf5296">Evan Fitzmaurice</a></h3>
   <p class="member-role">PhD Student</p>
@@ -76,7 +76,7 @@
 </div></div>
 
 <div class="member-card">
-  <img src="https://ecos-appdev-production.s3.amazonaws.com/science_site/s3fs-public/styles/f_story_image/public/2022-09/astro%20brefka.jpeg?h=5c58f871&itok=T68jqzLT" alt="Lucas Brefka" class="member-image">
+  <img src="/assets/images/people/lucas_brefka.jpg" alt="Lucas Brefka" class="member-image">
   <div class="member-text">
   <h3><a href="https://science.psu.edu/astro/people/lfb5454">Lucas Brefka</a></h3>
   <p class="member-role">PhD Student</p>
@@ -84,7 +84,7 @@
 </div></div>
 
 <div class="member-card">
-  <img src="https://ecos-appdev-production.s3.amazonaws.com/science_site/s3fs-public/styles/f_story_image/public/2023-08/IMG_0663.JPG?h=1453976c&itok=P09NeuOF" alt="Elizabeth Gonzalez" class="member-image">
+  <img src="/assets/images/people/elizabeth_gonzalez.jpg" alt="Elizabeth Gonzalez" class="member-image">
   <div class="member-text">
   <h3><a href="https://astroelizabeth.weebly.com/">Elizabeth Gonzalez</a></h3>
   <p class="member-role">PhD Student, NSF Graduate Research Fellow</p>
@@ -92,9 +92,9 @@
 </div></div>
 
 <div class="member-card">
-  <img src="https://ecos-appdev-production.s3.amazonaws.com/science_site/s3fs-public/styles/f_story_image/public/2023-09/Kanishk%20Pandey.jpg?h=9db50c72&itok=lzB5PLI9" alt="Kanishk Pandey" class="member-image">
+  <img src="/assets/images/people/kanishk_pandey.jpg" alt="Kanishk Pandey" class="member-image">
   <div class="member-text">
-  <h3><a href="https://science.psu.edu/astro/people/kfp5432">Kanishk Pandey</a></h3>
+  <h3><a href="https://science.psu.edu/user/20782">Kanishk Pandey</a></h3>
   <p class="member-role">PhD Student, NSF Graduate Research Fellow</p>
   <p>Developing stellar variability mitigation techniques for extreme precision radial velocity, exploring the potential of line-by-line measurements using NEID observations during solar eclipses. </p>
   </div>
@@ -103,44 +103,218 @@
 
 ---
 
-## Former Group Members
-*TODO: Complete List Make pages for each*
+# Former Group Members
+## PhD Students
+~~~
+<div class="member-card">
+  <img src="/assets/images/people/michael_palumbo.jpg" alt="Michael Palumbo" class="member-image">
+  <div class="member-text">
+  <h3><a href="michael_palumbo">Michael Palumbo</a></h3>
+  <p class="member-role">PhD 2024, PSU<br>Flatiron Research Fellow</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/christian_gilbertson.jpg" alt="Christian Gilbertson" class="member-image">
+  <div class="member-text">
+  <h3><a href="christian_gilbertson">Christian Gilbertson</a></h3>
+  <p class="member-role">PhD 2023, PSU<br>Block, Sr. ML Engineer</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/brianna_zawadzki.png" alt="Brianna Zawadzki" class="member-image">
+  <div class="member-text">
+  <h3><a href="brianna_zawadzki">Brianna Zawadzki</a></h3>
+  <p class="member-role">PhD 2023, PSU, chair: Ian Czekala<br>Brinson Prize Fellow, Wesleyan University</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/matthias_he.png" alt="Matthias He" class="member-image">
+  <div class="member-text">
+  <h3><a href="matthias_he">Matthias He</a></h3>
+  <p class="member-role">PhD 2020, PSU<br>NASA NPP Fellow, NASA Ames</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/danley_hsu.jpg" alt="Danley Hsu" class="member-image">
+  <div class="member-text">
+  <h3><a href="danley_hsu">Danley Hsu</a></h3>
+  <p class="member-role">PhD 2020, PSU<br>Data Scientist, Johns Hopkins Applied Physics Lab</p>
+  <a href="https://www.linkedin.com/in/danley-hsu-620324120" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/robert_morehead.jpg" alt="Robert Morehead" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Robert Morehead</a></h3>
+  <p class="member-role">PhD 2016, PSU<br>Associate Teaching Professor, PSU</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/megan_shabram.jpg" alt="Megan Shabram" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Megan Shabram</a></h3>
+  <p class="member-role">PhD 2015, PSU<br>Giant Magellan Telescope, Data Scientist</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/ben_nelson.png" alt="Benjamin Nelson" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Benjamin Nelson</a></h3>
+  <p class="member-role">PhD 2015, PSU<br>Chan Zuckerberg Initiative</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/pengcheng_guo.jpg" alt="PengCheng Guo" class="member-image">
+  <div class="member-text">
+  <h3><a href="">PengCheng Guo</a></h3>
+  <p class="member-role">PhD 2012, UF</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/knicole_colon.jpg" alt="Knicole Colón" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Knicole Colón</a></h3>
+  <p class="member-role">PhD 2012, UF<br>Astrophysicist, NASA Goddard Space Flight Center</p>
+  <p><a href="https://www.linkedin.com/in/knicole-colon-90737366" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  </p>
+  </div>
+</div>
+~~~
 
-### PhD Students
-- [Michael Palumbo](michael_palumbo) (PhD 2024, PSU): Flatiron Research Fellow
-- [Christian Gilbertson](christian_gilbertson) (PhD 2023, PSU ): 
-- [Brianna Zawadzki](brianna_zawadzki) (PhD 2023, PSU, chair: Ian Czekala)
-- [Matthias He](matthias_he) (PhD 2022, PSU)
-- [Danley Hsu](danley_hsu) (PhD 2020, PSU)
-- [Megan Shabram]() (PhD 2015, PSU)
-- [Robert Morehead]() (PhD 2016, PSU)
-- [Benjamin Nelson]() (PhD 2025, PSU)
-- [PengCheng Guo]() (PhD 2012, UF)
-- [Knicole Colón]() (PhD 2012, UF)
+## Postdocs
 
-### Postdocs
-- Alex Wise
-- Zhao Guo
-- Daniel Carrera
-- Ari Silburt
-- Angie Wolfgang
-- Daniel Jontof-Hutter
-- Darin Ragozzine
-- Sourav Chatterjee
-- Aaron Boley
-- Matthew Payne
-- Althea Moorhead
-- Dimitri Veras
+~~~
+<div class="member-card">
+  <img src="/assets/images/people/alex_wise.jpg" alt="Alex Wise" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Alex Wise</a></h3>
+  <p class="member-role">Postdoc, PSU<br>Optiver, Quantitative Researcher</p>
+  
+  <p><a href="https://www.linkedin.com/in/alexander-wise-a5193232/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  </p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/jinglin_zhao.jpg" alt="Jinglin Zhao" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Jinglin Zhao</a></h3>
+  <p class="member-role">Postdoc, PSU<br>Postdoc, DTU Space</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/zhao_guo.jpg" alt="Zhao Guo" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Zhao Guo</a></h3>
+  <p class="member-role">Postdoc, PSU<br>Applied Math & Astrophysics Researcher, University of Leeds</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/daniel_carrera.jpg" alt="Daniel Carrera" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Daniel Carrera</a></h3>
+  <p class="member-role">Postdoc, PSU<br>Assistant Research Professor, New Mexico State University</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/ari_silburt.jpg" alt="Ari Silburt" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Ari Silburt</a></h3>
+  <p class="member-role">Postdoc, PSU<br>Software Engineer, Bloomberg</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/angie_wolfgang.jpg" alt="Angie Wolfgang" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Angie Wolfgang</a></h3>
+  <p class="member-role">Postdoc, PSU<br>Lead Data Scientists, National Grid</p>
+  <p><a href="https://www.linkedin.com/in/dr-angie-wolfgang/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://github.com/dawolfgang" title="GitHub"><i class="fab fa-github"></i></a>
+  </p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/daniel_jontofhutter.jpg" alt="Daniel Jontof-Hutter" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Daniel Jontof-Hutter</a></h3>
+  <p class="member-role">Postdoc, PSU<br>Faculty, University of the Pacific</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/darin_ragozzine.jpg" alt="Darin Ragozzine" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Darin Ragozzine</a></h3>
+  <p class="member-role">Postdoc, UF<br>Faculty, Brigham Young University</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/sourav_chatterjee.jpg" alt="Sourav Chatterjee" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Sourav Chatterjee</a></h3>
+  <p class="member-role">Postdoc, UF<br>Reader, Tata Institute of Fundamental Research, Mumbai</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/aaron_boley.png" alt="Aaron Boley" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Aaron Boley</a></h3>
+  <p class="member-role">Postdoc & Sagan Fellow, UF<br>Faculty &amp; CRC Chair, University of British Columbia</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/matthew_payne.jpg" alt="Matthew Payne" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Matthew Payne</a></h3>
+  <p class="member-role">Postdoc, UF<br>SAO Research Scientist, Harvard-Smithsonian Center for Astrophysics</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/althea_moorhead.jpg" alt="Althea Moorhead" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Althea Moorhead</a></h3>
+  <p class="member-role">Postdoc, UF<br>Space Scientist, NASA Marshall Space Flight Center</p>
+  <p></p>
+  </div>
+</div>
+<div class="member-card">
+  <img src="/assets/images/people/dimitri_veras.png" alt="Dimitri Veras" class="member-image">
+  <div class="member-text">
+  <h3><a href="">Dimitri Veras</a></h3>
+  <p class="member-role">Postdoc, UF<br>Faculty, University of Warwick</p>
+  <p></p>
+  </div>
+</div>
+~~~
+
+
+*TODO:*  Create a page for each former advisee.  Add links to LinkedIn, Google Scholar, GitHub, NASA ADS, etc.  Add summary of major interests.  Add next position after graduating and most recent known position.
 
 ---
-## Collaborations
+# Collaborations
 - [Astrostaticians](astrostatisticans)
 - [NEID Science Team](https://neid.psu.edu/)
 - [Habitable Zone Planet Finder Science Team](https://hpf.psu.edu/)
 
 
 ---
-## Future Team Members?
+# Future Team Members?
 
 Interested in joining the group? See the [Penn State Astronomy & Astrophysics](https://science.psu.edu/astro/graduate) graduate program or [postdoctoral opportunities](https://science.psu.edu/astro/research/postdoc-opportunities) pages.
 
