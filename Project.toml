@@ -1,0 +1,5 @@
+[deps]
+BibParser = "13533e5b-e1c2-4e57-8cef-cac5e52f6474"
+Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+Git = "d7ba0133-e1db-5d97-8f8c-041e4b3a1eb2"
+NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"
