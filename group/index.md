@@ -10,8 +10,8 @@
 <div class="franklin-content">
 ~~~
 
-\toc
 # Current Group 
+\toc
 ~~~
 <div class="member-card">
   <img src="/assets/images/people/eric_ford.jpg" alt="Eric Ford" class="member-image">
