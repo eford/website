@@ -22,35 +22,35 @@ I emphasize active learning and providing hands-on experience with real data and
 ### Recent Courses
 ~~~
 <div class="course-card">
-  <h3>ASTRO 140: Life in the Universe</h3>
+  <h3>🌌 ASTRO 140: Life in the Universe</h3>
   <p class="course-meta">Introductory undergraduate · General education · Taught by different instructors most Spring/Fall semesters</p>
   <p>An introductory course exploring the scientific search for life beyond Earth, from the origins of life on our planet to the detection and characterization of exoplanets and the prospects for finding biosignatures.</p>
 </div>
 
 <div class="course-card">
-  <h3>ASTRO 416: Exoplanets &amp; Data Science</h3>
+  <h3>📈 ASTRO 416: Data Science Applications to Astronomy</h3>
   <p class="course-meta">Upper-level undergraduate · Typically taught once every two years</p>
-  <p>An upper-level undergraduate course covering statistical methods, data analysis, and computational techniques for astronomical research, with an emphasis on exoplanet science.</p>
+  <p> An upper-level undergraduate course covering statistical methods, data analysis, and computational techniques for astronomical research, with an emphasis on exoplanet science.</p>
   <p>📎 <a href="https://psuastro416.github.io/Spring2025">Course website &amp; materials</a>
 </div>
 
 <div class="course-card">
-  <h3>ASTRO 528: High-Performance Scientific Computing for Astrophysics</h3>
+  <h3>🖥 ASTRO 528: High-Performance Scientific Computing for Astrophysics</h3>
   <p class="course-meta">Graduate · Typicallly taught once every two years</p>
-  <p>A graduate course introducing modern techniques for computationally intensive astrophysical research, including parallel computing (shared memory, distributed, GPU), the Julia programming language, benchmarking and optimization, and reproducible scientific computing.</p>
+  <p> A graduate course introducing modern techniques for computationally intensive astrophysical research, including parallel computing (shared memory, distributed, GPU), the Julia programming language, benchmarking and optimization, and reproducible scientific computing.</p>
   <p>📎 <a href="https://psuastro528.github.io/Fall2025">Course website &amp; materials</a></p>
 </div>
 
 <div class="course-card">
-  <h3>ASTRO 589: Seminar — Extremely Precise Radial Velocity Surveys</h3>
+  <h3>🌈⃤ ASTRO 589: Seminar — Extremely Precise Radial Velocity Surveys</h3>
   <p class="course-meta">Graduate seminar · Topics and instructors change each semester</p>
-  <p>A graduate seminar covering the latest developments in EPRV science, instrumentation, and data analysis.</p>
+  <p> A graduate seminar covering the latest developments in EPRV science, instrumentation, and data analysis.</p>
 </div>
 
 <div class="course-card">
-  <h3>ABIOL 590: Astrobiology Seminar</h3>
+  <h3>🧬 ABIOL 590: Astrobiology Seminar</h3>
   <p class="course-meta">Graduate seminar · Typically taught once every two years</p>
-  <p>A graduate seminar about recent advances in Astrobiology and emphasizing interdisciplinary communications skills.</p>
+  <p> A graduate seminar about recent advances in Astrobiology and emphasizing interdisciplinary communications skills.</p>
 </div>
 ~~~
 

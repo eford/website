@@ -53,7 +53,7 @@ Ultimately, my research aims to improve our understanding of planet formation & 
   </div>
   <div class="card">
     <h3>📊 <a href="research/#exoplanet_demographics">Exoplanet Demographics</a></h3>
-    <p>Measuring occurrence rates of exoplanets and the planetary systesm architectures using data from NASA's <a href="https://science.nasa.gov/mission/kepler/">Kepler mission</a>. Bringing Bayesian methods, heirarchical models, Approximate Bayesian Computing, and simulation-based inference to exoplanet community.</p>
+    <p>Measuring occurrence rates of exoplanets and the planetary systemm architectures using data from NASA's <a href="https://science.nasa.gov/mission/kepler/">Kepler mission</a>. Incorporating Bayesian methods, heirarchical models, Approximate Bayesian Computing, and simulation-based inference.</p>
   </div>
   <div class="card">
     <h3>🪐 <a href="research/#orbital_dynamics_planet_formation">Orbital Dynamics &amp; Formation</a></h3>
@@ -65,11 +65,11 @@ Ultimately, my research aims to improve our understanding of planet formation & 
   </div>
   <div class="card">
     <h3>💻 <a href="research/#high-performance_computing_for_astrophysics">High-Performance Computing</a></h3>
-    <p>GPU computing, parallel algorithms, and the Julia programming language for computationally intensive astrophysical problems.</p>
+    <p>GPU computing, parallel algorithms, and the Julia programming language for computationally intensive astrophysical problems and reproducible research.</p>
   </div>
   <div class="card">
     <h3>🌍 <a href="research/#astrobiology">Life in the Universe</a></h3>
-    <p>Placing our Solar System in context and understanding the prospects for habitable worlds around other stars.</p>
+    <p>Placing our Solar System in context, strategies to characterize potentially habitable worlds, and evaluating the prospects for life around other stars.</p>
   </div>
 </div>
 ~~~
