@@ -13,8 +13,8 @@
 
 \toc
 I emphasize active learning and providing hands-on experience with real data and modern computational tools.  I developed two courses (Astro 416 &amp; Astro 528) courses that emphasize:
-- **Fundamental concepts**  — lab tutorials start as low-code, emphasizing concepts over syntax.  As students gain experience, they start modifying code, and eventually work up to writing performant code to support a project of their own design.
-- **Modern software development practices** — selected courses demonstrate how to uses [Julia](https://julialang.org/) for high-level, performant, scientific computing, as well as such as version control, literate programming, and automated testing.
+- **Fundamental concepts**  — lab tutorials start as low-code, emphasizing concepts over syntax.  As students gain experience, they start modifying code, and eventually work up to developing a quality scientific code or dashboard to support a project of their own design.
+- **Modern software development practices** — selected courses use [Julia](https://julialang.org/) for high-level, performant, scientific computing, while teaching modern software development skills as such as version control, literate programming, and automated testing.
 - **Real scientific data** — students work with actual astronomical datasets.
 
 
@@ -30,27 +30,29 @@ I emphasize active learning and providing hands-on experience with real data and
 <div class="course-card">
   <h3>📈 ASTRO 416: Data Science Applications to Astronomy</h3>
   <p class="course-meta">Upper-level undergraduate · Typically taught once every two years</p>
-  <p> An upper-level undergraduate course covering statistical methods, data analysis, and computational techniques for astronomical research, with an emphasis on exoplanet science.</p>
-  <p>📎 <a href="https://psuastro416.github.io/Spring2025">Course website &amp; materials</a>
+  <p> An upper-level undergraduate course providing an overview of data science skills, including statistical methods, data analysis, data visualization, and computational techniques for astronomical research.</p>
+  <!-- <p>📎 Archived <a href="https://psuastro416.github.io/Spring2025">Course website &amp; materials</a> -->
 </div>
 
 <div class="course-card">
   <h3>🖥 ASTRO 528: High-Performance Scientific Computing for Astrophysics</h3>
   <p class="course-meta">Graduate · Typicallly taught once every two years</p>
-  <p> A graduate course introducing modern techniques for computationally intensive astrophysical research, including parallel computing (shared memory, distributed, GPU), the Julia programming language, benchmarking and optimization, and reproducible scientific computing.</p>
-  <p>📎 <a href="https://psuastro528.github.io/Fall2025">Course website &amp; materials</a></p>
+  <p> A graduate course introducing modern techniques for computationally intensive astrophysical research, including parallel computing (shared memory, distributed, GPU), the Julia programming language, software development skills, testing, benchmarking and optimization, and reproducible scientific computing.</p>
+  <!-- <p>📎 Archived <a href="https://psuastro528.github.io/Fall2025">Course website &amp; materials</a></p> -->
 </div>
 
 <div class="course-card">
   <h3>🌈⃤ ASTRO 589: Seminar — Extremely Precise Radial Velocity Surveys</h3>
   <p class="course-meta">Graduate seminar · Topics and instructors change each semester</p>
   <p> A graduate seminar covering the latest developments in EPRV science, instrumentation, and data analysis.</p>
+  <!-- <p>📎 Archived <a href="https://eford.github.io/PsuAstro589Fall2024/">Course website &amp; materials</a></p> -->
+
 </div>
 
 <div class="course-card">
   <h3>🧬 ABIOL 590: Astrobiology Seminar</h3>
   <p class="course-meta">Graduate seminar · Typically taught once every two years</p>
-  <p> A graduate seminar about recent advances in Astrobiology and emphasizing interdisciplinary communications skills.</p>
+  <p> A graduate seminar about recent advances in Astrobiology that emphasizes building interdisciplinary communications skills.</p>
 </div>
 ~~~
 
