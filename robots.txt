@@ -1,4 +1,4 @@
-Sitemap: https://eford.netlify.app/sitemap.xml
+Sitemap: https://eford.github.io/sitemap.xml
 
 User-agent: *
 Disallow:
