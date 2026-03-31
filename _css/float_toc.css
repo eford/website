@@ -2,25 +2,29 @@
 /* Container for the table of contents */
 .franklin-toc {
     float: right;
-    width: 220px; /* Adjust width as needed */
-    margin-left: 20px;
+    width: 200px; /* Adjust width as needed */
+    margin-left: 10px;
     position: sticky; /* Keeps it visible while scrolling */
-    top: 80px; /* Distance from the top of the page */
+    top: 70px;
     padding: 10px;
     background-color: #f9f9f9; /* Optional styling */
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 15px;
 }
 
 /* Responsive adjustment for small screens */
 @media (max-width: 600px) {
-    .toc-right {
-        position: relative;
+    .franklin-toc {
         float: none;
         width: 100%;
         margin-left: 0;
+        position: relative;
+    padding: 10px;
+    background-color: #f9f9f9; /* Optional styling */
+    border: 2px solid #ddd;
+    border-radius: 15px;
     }
-
+}
 
 
 

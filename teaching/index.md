@@ -19,7 +19,7 @@ I emphasize active learning and providing hands-on experience with real data and
 
 
 ## Penn State
-### Recent Penn State Courses
+### Recent Courses
 ~~~
 <div class="course-card">
   <h3>ASTRO 140: Life in the Universe</h3>

@@ -2,22 +2,22 @@
   Franklin.jl configuration for Eric B. Ford's personal website
 -->
 
-@def author      = "Eric B. Ford"
+@def author      = "Eric Ford"
 @def mintoclevel  = 2
 @def maxtoclevel  = 3
 @def prepath      = ""
-@def website_title = "Eric B. Ford"
-@def website_descr = "Distinguished Professor of Astronomy & Astrophysics, Penn State University"
-@def website_url   = "https://eford.netlify.app"
+@def website_title = "Eric Ford"
+@def website_descr = "Personal homepage for Eric Ford"
+@def website_url   = "https://eford.github.io/"
 
 <!-- Navigation bar items -->
 +++
 nav_items = [
   "Home" =>         "/",
   "Research" =>     "/research/",
+  "Group" =>        "/group/",
   "Publications" => "/publications/",
   "Teaching" =>     "/teaching/",
-  "Group" =>        "/group/",
   "Software" =>     "/software/",
   "Contact" =>      "/contact/" ]
 +++

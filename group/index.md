@@ -1,7 +1,7 @@
 @def title = "Research Group"
 @def mintoclevel = 1
-@def maxtoclevel = 3
-@def floattoc = true
+@def maxtoclevel = 1
+@def floattoc = false
 ---
 {{insert head.html}}
 {{insert nav.html}}
@@ -9,9 +9,9 @@
 <main class="site-main">
 <div class="franklin-content">
 ~~~
-\toc
 
-# Current Team Members
+\toc
+# Current Group 
 ~~~
 <div class="member-card">
   <img src="/assets/images/people/eric_ford.jpg" alt="Eric Ford" class="member-image">
@@ -425,7 +425,7 @@
 
 ---
 
-# Prospective Team Members
+# Prospective Members
 
 If you are interested in joining our research group or the [Center for Exoplanets &amp; Habitable Worlds](https://exoplanets.psu.edu/) at Penn State, then please refer to the following sites:
 - Penn State [Astronomy &amp; Astrophysics](https://science.psu.edu/astro/graduate) graduate program
