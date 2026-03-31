@@ -18,11 +18,12 @@
         float: none;
         width: 100%;
         margin-left: 0;
-        position: relative;
-    padding: 10px;
-    background-color: #f9f9f9; /* Optional styling */
-    border: 2px solid #ddd;
-    border-radius: 15px;
+        position: static;
+        top: 0px;
+        padding: 10px;
+        background-color: #f9f9f9; /* Optional styling */
+        border: 2px solid #ddd;
+        border-radius: 15px;
     }
 }
 
