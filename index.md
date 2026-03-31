@@ -39,22 +39,25 @@
 ~~~
 
 ## About
-My research centers around **exoplanets**, with long-term goals of improving our understanding of planet formation and the dynamical evolution of planetary systems. My research group includes both theoretical modeling of planetary systems and interpretation of exoplanet observations. I emphasize the interface between theory and observation, including techniques for characterizing extrasolar planets, the statistical analysis of extrasolar planet observations, methodology for exoplanet demographics, and the efficient design of extrasolar planet surveys. I collaborate with leading planet surveys, including NASA’s [Kepler mission](https://science.nasa.gov/mission/kepler/), the [Habitable Zone Planet Finder (HPF)](https://hpf.psu.edu/) and [NEID]((https://neid.psu.edu/)) science teams. Ultimately, my research aims to improve our understanding of planet formation & evolution, both in our Solar System and in general.
+My research centers around **exoplanets**, with the long-term goal of improving our understanding of planet formation and the dynamical evolution of planetary systems. 
+My research group combines theoretical modeling of planetary systems and moddern statistical and machine learning methods to improve the interpretation of exoplanet observations. 
+We emphasize the interface between theory and observation, incorporating a variety of techniques for characterizing extrasolar planets, statistical methods for analyzing extrasolar planet observations and exoplanet demographics, and the approaches for improving the design of extrasolar planet surveys. 
+Ultimately, my research aims to improve our understanding of planet formation & evolution, both in our Solar System and beyond.
 
 ## Research Interests
 ~~~
 <div class="card-grid">
   <div class="card">
     <h3>🔭 <a href="research/#extremely_precise_radial_velocity_surveys">Extremely Precise Radial Velocities</a></h3>
-    <p>Developing methods to detect Earth-like planets using next-generation spectrographs like NEID and HPF, including data-driven methods to mitigate stellar variability using Sun-as-a-star observations.</p>
+    <p>Developing methods to detect Earth-like planets using next-generation spectrographs like <a href="https://neid.psu.edu/">NEID</a> and <a href="https://hpf.psu.edu/">HPF</a>, including data-driven methods to mitigate stellar variability using Sun-as-a-star observations.</p>
   </div>
   <div class="card">
     <h3>📊 <a href="research/#exoplanet_demographics">Exoplanet Demographics</a></h3>
-    <p>Measuring occurrence rates of exoplanets and the planetary systesm architectures using Bayesian methods, Approximate Bayesian Computing, and simulation-based inference.</p>
+    <p>Measuring occurrence rates of exoplanets and the planetary systesm architectures using data from NASA's <a href="https://science.nasa.gov/mission/kepler/">Kepler mission</a>. Bringing Bayesian methods, heirarchical models, Approximate Bayesian Computing, and simulation-based inference to exoplanet community.</p>
   </div>
   <div class="card">
     <h3>🪐 <a href="research/#orbital_dynamics_planet_formation">Orbital Dynamics &amp; Formation</a></h3>
-    <p>Planet-planet scattering, secular evoluation of multiple planet systems, orbital migration, and planets in binary systems, and the dynamical processes that shape planetary system architectures.</p>
+    <p>Transit timing variations, planet-planet scattering, secular evoluation of multiple planet systems, orbital migration, and planets in binary systems, and the dynamical processes that shape planetary system architectures.</p>
   </div>
   <div class="card">
     <h3>📈 <a href="research/#astrostatistics_data_science_methods">Astrostatistics &amp; Astroinformatics</a></h3>

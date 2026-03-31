@@ -7,7 +7,7 @@
 <div class="franklin-content">
 ~~~
 
-# Contact
+# Contact Info
 
 ~~~
 <div class="contact-grid">
@@ -16,10 +16,7 @@
     <p><a href="mailto:ebf11@psu.edu">ebf11@psu.edu</a></p>
 
     <h3><i class="fas fa-building"></i> Office</h3>
-    <p>504 Davey Laboratory<br>
-    Department of Astronomy &amp; Astrophysics<br>
-    Penn State University<br>
-    University Park, PA 16802</p>
+    <p>504 Davey Laboratory</p>
   </div>
   <div class="contact-block">
     <h3><i class="fas fa-link"></i> Online Profiles</h3>
@@ -33,9 +30,10 @@
   </div>
 </div>
 ~~~
+
 ---
 
-### Prospective Students & Postdocs
+## Prospective Students & Postdocs
 
 If you are interested in joining my research group, please see:
 - [Penn State Astronomy & Astrophysics Graduate Program](https://science.psu.edu/astro/graduate)
