@@ -268,4 +268,36 @@ pre code { padding: 1rem; background: #f8f9fa; }
   /* Subtle top border to visually separate from content */
   border-top: 1px solid #e0e0e0;
   margin-top: 2rem;
+
+
 }
+
+/* Table of Contents */
+/* Style the Franklin TOC list */
+.franklin-toc li {
+    list-style-type: none;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.franklin-toc li li {
+    list-style-type: disc; /* or circle, square */
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.franklin-toc ol {
+    /* list-style-type: none; */
+    list-style-type: disc; /* or circle, square */
+    padding-left: 10px;
+}
+
+.franklin-toc ol ol {
+  list-style-type: disc; /* or circle, square */
+  padding-left: 15px;          /* Indents nested lists */
+  margin-left: 5px;
+}
+
+.franklin-toc ol li {
+  font-size: 0.95em; /* Slightly smaller font for sub-items */
+}
+
+

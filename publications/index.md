@@ -1,4 +1,5 @@
 @def title = "Publications"
+@def floattoc = true
 --- 
 {{insert head.html}}
 {{insert nav.html}}
@@ -9,8 +10,7 @@
 
 # Publications
 
-For a comprehensive and up-to-date list of publications, please see:
-
+For an up-to-date list of publications, please see:
 ~~~
 <div class="card-grid">
   <div class="card">
@@ -26,7 +26,7 @@ For a comprehensive and up-to-date list of publications, please see:
 
 ---
 
-## Review Papers
+## Selected Review Papers
 ~~~
 <div class="pub-entry">
   <span class="pub-title">Are We There Yet? Challenges in Quantifying the Frequency of Earth Analogs in the Habitable Zone</span><br>
@@ -37,17 +37,17 @@ For a comprehensive and up-to-date list of publications, please see:
 </div>
 
 <div class="pub-entry">
-  <span class="pub-title">Architectures of Planetary Systems and Implications for their Formation</span><br>
-  <span class="pub-authors">Ford, E.B.</span>
-  <span class="pub-year">(2014)</span> 
-  <span class="pub-venue">PNAS, 111, 12616. </span>
-</div>
-
-<div class="pub-entry">
   <span class="pub-title">Statistical methods for exoplanet detection with radial velocities</span><br>
   <span class="pub-authors">Hara, N. & Ford, E.B. </span>
   <span class="pub-year">(2023)</span> 
   <span class="pub-venue">Annual Review of Statistics and Its Application, v10, 623–649.</span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-title">Architectures of Planetary Systems and Implications for their Formation</span><br>
+  <span class="pub-authors">Ford, E.B.</span>
+  <span class="pub-year">(2014)</span> 
+  <span class="pub-venue">PNAS, 111, 12616. </span>
 </div>
 ~~~
 
@@ -72,13 +72,6 @@ For a comprehensive and up-to-date list of publications, please see:
   <span class="pub-authors">Palumbo, M.L., Ford, E.B. et al.</span>
   <span class="pub-year">(2024)</span> 
   <span class="pub-venue">AJ, 168, 46</span>
-</div>
-
-<div class="pub-entry">
-  <span class="pub-title">Statistical methods for exoplanet detection with radial velocities</span><br>
-  <span class="pub-authors">Hara, N. & Ford, E.B.</span>
-  <span class="pub-year">(2023)</span> 
-  <span class="pub-venue">Annual Review of Statistics and Its Application, v10, 623–649 </span>
 </div>
 
 ~~~

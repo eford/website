@@ -10,3 +10,16 @@ pre { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; margin: 1.5em 0; }
 th, td { border: 1px solid #ddd; padding: 0.6em 1em; text-align: left; }
 th { background: #f5f5f5; font-weight: 600; }
+.franklin-toc ol {
+  list-style-type: disc; /* or circle, square */
+  padding-left: 10px;
+}
+.franklin-toc ol ol {
+  list-style-type: disc; /* or circle, square */
+  padding-left: 15px;          /* Indents nested lists */
+  margin-left: 5px;
+}
+
+.franklin-toc ol li {
+  font-size: 0.95em; /* Slightly smaller font for sub-items */
+}

@@ -1,4 +1,7 @@
 @def title = "Research"
+@def mintoclevel = 1
+@def maxtoclevel = 2
+@def floattoc = true
 --- 
 {{insert head.html}}
 {{insert nav.html}}
@@ -10,6 +13,8 @@
 # Research Themes
 
 My research group works on a range of topics in exoplanet science, from the development of novel observational and statistical methods to theoretical modeling of planetary system formation and dynamics. Below are someof our recent research areas.
+
+\toc
 
 ---
 ## Extremely Precise Radial Velocity Surveys

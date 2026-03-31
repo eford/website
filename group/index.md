@@ -1,4 +1,7 @@
 @def title = "Research Group"
+@def mintoclevel = 1
+@def maxtoclevel = 3
+@def floattoc = true
 ---
 {{insert head.html}}
 {{insert nav.html}}
@@ -6,9 +9,9 @@
 <main class="site-main">
 <div class="franklin-content">
 ~~~
+\toc
 
 # Current Team Members
-
 ~~~
 <div class="member-card">
   <img src="/assets/images/people/eric_ford.jpg" alt="Eric Ford" class="member-image">
@@ -124,7 +127,9 @@
 ---
 
 # Former Group Members
-## PhD Students
+
+## Former PhD Students
+
 ~~~
 <div class="member-card">
   <img src="/assets/images/people/michael_palumbo.jpg" alt="Michael Palumbo" class="member-image">
@@ -252,7 +257,7 @@
 </div>
 ~~~
 
-## Postdocs
+## Former Postdocs
 
 ~~~
 <div class="member-card">
@@ -411,6 +416,7 @@
 ~~~
 
 ---
+
 # Collaborations
 - [Astrostaticians](astrostatisticans)
 - [NEID Science Team](https://neid.psu.edu/)
@@ -418,9 +424,12 @@
 
 
 ---
-# Future Team Members?
 
-Interested in joining the group? See the [Penn State Astronomy & Astrophysics](https://science.psu.edu/astro/graduate) graduate program or [postdoctoral opportunities](https://science.psu.edu/astro/research/postdoc-opportunities) pages.
+# Prospective Team Members
+
+If you are interested in joining our research group or the [Center for Exoplanets &amp; Habitable Worlds](https://exoplanets.psu.edu/) at Penn State, then please refer to the following sites:
+- Penn State [Astronomy &amp; Astrophysics](https://science.psu.edu/astro/graduate) graduate program
+- Opportunities at the [Center for Exoplanets &amp; Habitable Worlds](https://exoplanets.psu.edu/about-cehw/opportunities/)
 
 ~~~
 </div>
