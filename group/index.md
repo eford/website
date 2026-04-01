@@ -10,120 +10,25 @@
 <div class="franklin-content">
 ~~~
 
-# Current Group 
+# Current Group
 \toc
-~~~
-<div class="member-card">
-  <img src="/assets/images/people/eric_ford.jpg" alt="Eric Ford" class="member-image">
-  <div class="member-text">
-  <h2><a href="/">Eric Ford</a></h2>
-  <p class="member-role">Distinguished Professor</p>
-  <p></p>
-  </div>
-</div>
-~~~
+
+{{member_cards eric_ford}}
 
 ## Postdoctoral Researchers
-~~~
-<div class="member-card">
-  <img src="/assets/images/people/anne_datillo.jpg" alt="Anne Datillo" class="member-image">
-  <div class="member-text">
-  <h3><a href="https://science.psu.edu/astro/people/axd5702">Anne Dattilo</a></h3>
-  <p class="member-role">CEHW Postdoctoral Fellow & ICDS Rising Researcher</p>
-  <p>Exploring new approaches to Simulation-based Inference for characterizing exoplanet populations.</p>
-  <p>
-    <a href="https://aedattilo.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://github.com/aedattilo" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-<img src="/assets/images/people/rachel_fernandes.jpg" alt="Rachel Fernandes" class="member-image">
-  <div class="member-text">
-    <h3><a href="https://science.psu.edu/astro/people/rbf5378">Rachel Fernandes</a></h3>
-  <p class="member-role">CEHW Postdoctoral Fellow</p>
-  <p>Connecting diverse observations of planetary systems to fundamental theories in planet formation. Currently working on detecting transiting planets in young clusters and comparing demographics with Kepler's Gyr-old population. <br>Co-Chair of NASA's ExoPAG Exoplanet Demographics Science Interest Group 2 (SIG2).</p>
-  <p>
-    <a href="https://rbfernandes.wixsite.com/rbfernandes" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/laura_flagg.png" alt="Laura Flagg" class="member-image">
-  <div class="member-text">
-  <h3><a href="https://science.psu.edu/astro/people/lvf5358">Laura Flagg</a></h3>
-  <p class="member-role">CEHW Postdoctoral Fellow</p>
-  <p>Characterizing exoplanet atmospheres with high-resolution spectroscopy, young exoplanets, and gas dispersal timescales in circumstellar disks.</p>
-  <p>
-    <a href="https://lauraflagg.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://github.com/lauraflagg" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/kristo_ment.jpg" alt="Kristo Ment" class="member-image">
-  <div class="member-text">
-  <h3><a href="https://science.psu.edu/astro/people/kxm821">Kristo Ment</a></h3>
-  <p class="member-role">CEHW Postdoctoral Fellow</p>
-  <p>Terrestrial planets transiting M dwarfs and constraints on the occurrence of such worlds.  
-  Fast algorithms for searching for transits.<br>
-  Data-driven methods for simultaneously modeling stellar and telluric variability.</p>
-  <p>
-    <a href="https://scholar.harvard.edu/kristoment" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-  </p>
-  </div>
-</div>
 
 ~~~
+{{member_cards_from_dir postdocs}}
+~~~
+
 ---
 
 ## Graduate Students
 
 ~~~
-<div class="member-card">
-  <img src="/assets/images/people/evan_fitzmaurice.png" alt="Evan Fitzmaurice" class="member-image">
-  <div class="member-text">
-  <h3><a href="https://evanlfitz.github.io/">Evan Fitzmaurice</a></h3>
-  <p class="member-role">PhD Student</p>
-  <p>Characterization of exoplanets and brown dwarfs using radial velocity observations with HPF and NEID, and astrometry from Gaia.</p>
-  <p>
-    <a href="https://evanlfitz.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://github.com/evanlfitz" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/evanfitzmaurice/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-  </p>
-</div></div>
-
-<div class="member-card">
-  <img src="/assets/images/people/lucas_brefka.jpg" alt="Lucas Brefka" class="member-image">
-  <div class="member-text">
-  <h3><a href="https://science.psu.edu/astro/people/lfb5454">Lucas Brefka</a></h3>
-  <p class="member-role">PhD Student</p>
-  <p>Formation of planetary systems, particularly systems that look nothing like our own. Computer simulations of planetesimal formation conditions and their effects on final planet properties.</p>
-  <p>
-    <a href="https://github.com/lucasbrefka" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-</div></div>
-
-<div class="member-card">
-  <img src="/assets/images/people/elizabeth_gonzalez.jpg" alt="Elizabeth Gonzalez" class="member-image">
-  <div class="member-text">
-  <h3><a href="https://astroelizabeth.weebly.com/">Elizabeth Gonzalez</a></h3>
-  <p class="member-role">PhD Student, NSF Graduate Research Fellow</p>
-  <p>Developing stellar variability mitigation techniques for extreme precision radial velocity, including probing the effects of granulation on RV measurements using NEID observations during solar eclipses. </p>
-</div></div>
-
-<div class="member-card">
-  <img src="/assets/images/people/kanishk_pandey.jpg" alt="Kanishk Pandey" class="member-image">
-  <div class="member-text">
-  <h3><a href="https://science.psu.edu/user/20782">Kanishk Pandey</a></h3>
-  <p class="member-role">PhD Student, NSF Graduate Research Fellow</p>
-  <p>Developing stellar variability mitigation techniques for extreme precision radial velocity, exploring the potential of line-by-line measurements using NEID observations during solar eclipses. </p>
-  </div>
-</div></div>
+{{member_cards_from_dir grad_students}}
 ~~~
+
 ---
 
 # Former Group Members
@@ -131,288 +36,13 @@
 ## Former PhD Students
 
 ~~~
-<div class="member-card">
-  <img src="/assets/images/people/michael_palumbo.jpg" alt="Michael Palumbo" class="member-image">
-  <div class="member-text">
-  <h3><a href="michael_palumbo">Michael Palumbo</a></h3>
-  <p class="member-role">PhD 2024, PSU<br>Flatiron Research Fellow</p>
-  <p>
-    <a href="https://michaelpalumbo.me/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://github.com/palumbom" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/christian_gilbertson.jpg" alt="Christian Gilbertson" class="member-image">
-  <div class="member-text">
-  <h3><a href="christian_gilbertson">Christian Gilbertson</a></h3>
-  <p class="member-role">PhD 2023, PSU<br>Block, Sr. ML Engineer</p>
-  <p>
-    <a href="https://www.linkedin.com/in/christian-gilbertson/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/christiangil" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/brianna_zawadzki.png" alt="Brianna Zawadzki" class="member-image">
-  <div class="member-text">
-  <h3><a href="brianna_zawadzki">Brianna Zawadzki</a></h3>
-  <p class="member-role">PhD 2023, PSU, chair: Ian Czekala<br>Brinson Prize Fellow, Wesleyan University</p>
-  <p>
-    <a href="https://briannazawadzki.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://scholar.google.com/citations?user=3gY3XVMAAAAJ" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/jacob_luhn.jpg" alt="Jacob Luhn" class="member-image">
-  <div class="member-text">
-  <h3><a href="https://jacobluhn.github.io/">Jacob Luhn</a></h3>
-  <p class="member-role">PhD 2021, PSU, chair: Jason Wright<br>NASA Postdoctoral Fellow, JPL</p>
-  <p>
-    <a href="https://jacobluhn.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://github.com/JacobLuhn" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/matthias_he.png" alt="Matthias He" class="member-image">
-  <div class="member-text">
-  <h3><a href="matthias_he">Matthias He</a></h3>
-  <p class="member-role">PhD 2020, PSU<br>NASA NPP Fellow, NASA Ames</p>
-  <p>
-  <a href="https://hematthi.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/danley_hsu.jpg" alt="Danley Hsu" class="member-image">
-  <div class="member-text">
-  <h3><a href="danley_hsu">Danley Hsu</a></h3>
-  <p class="member-role">PhD 2020, PSU<br>Data Scientist, Johns Hopkins Applied Physics Lab</p>
-  <p>
-    <a href="https://www.linkedin.com/in/danley-hsu-620324120" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/robert_morehead.jpg" alt="Robert Morehead" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Robert Morehead</a></h3>
-  <p class="member-role">PhD 2016, PSU<br>Associate Teaching Professor, PSU</p>
-  <p>
-    <a href="https://science.psu.edu/astro/people/rcm242" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/megan_shabram.jpg" alt="Megan Shabram" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Megan Shabram</a></h3>
-  <p class="member-role">PhD 2015, PSU<br>Giant Magellan Telescope, Data Scientist</p>
-  <p>
-    <a href="https://www.linkedin.com/in/meganshabram" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://scholar.google.com/citations?user=VWg-V5IAAAAJ" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/ben_nelson.png" alt="Benjamin Nelson" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Benjamin Nelson</a></h3>
-  <p class="member-role">PhD 2015, PSU<br>Chan Zuckerberg Initiative</p>
-  <p>
-  <a href="https://www.linkedin.com/in/benelson7" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/pengcheng_guo.jpg" alt="PengCheng Guo" class="member-image">
-  <div class="member-text">
-  <h3><a href="">PengCheng Guo</a></h3>
-  <p class="member-role">PhD 2012, UF</p>
-  <p></p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/knicole_colon.jpg" alt="Knicole Colón" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Knicole Colón</a></h3>
-  <p class="member-role">PhD 2012, UF<br>Astrophysicist, NASA Goddard Space Flight Center</p>
-  <p>
-    <a href="https://www.linkedin.com/in/knicole-colon-90737366" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://science.gsfc.nasa.gov/astrophysics/cosmology/bio/knicole.colon" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-  </p>
-  </div>
-</div>
+{{member_cards_from_dir_reverse former_phd}}
 ~~~
 
 ## Former Postdocs
 
 ~~~
-<div class="member-card">
-  <img src="/assets/images/people/alex_wise.jpg" alt="Alex Wise" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Alex Wise</a></h3>
-  <p class="member-role">Postdoc, PSU<br>Optiver, Quantitative Researcher</p>
-  <p>
-    <a href="https://www.linkedin.com/in/alexander-wise-a5193232/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/jinglin_zhao.jpg" alt="Jinglin Zhao" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Jinglin Zhao</a></h3>
-  <p class="member-role">Postdoc, PSU<br>Postdoc, DTU Space</p>
-  <p>
-    <a href="https://sites.psu.edu/jlzhao/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://scholar.google.com/citations?user=dgT6ObAAAAAJ" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/zhao_guo.jpg" alt="Zhao Guo" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Zhao Guo</a></h3>
-  <p class="member-role">Postdoc, PSU<br>Applied Math & Astrophysics Researcher, University of Leeds</p>
-  <p>
-    <a href="http://www.astro.gsu.edu/~guo" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://scholar.google.com/citations?user=7Vo2q94AAAAJ" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/daniel_carrera.jpg" alt="Daniel Carrera" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Daniel Carrera</a></h3>
-  <p class="member-role">Postdoc, PSU<br>Assistant Research Professor, New Mexico State University</p>
-  <p>
-    <a href="https://danielcarrera.space/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://scholar.google.co.uk/citations?user=FVus8WsAAAAJ" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-    <a href="https://github.com/dcarrera" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/ari_silburt.jpg" alt="Ari Silburt" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Ari Silburt</a></h3>
-  <p class="member-role">Postdoc, PSU<br>Software Engineer, Bloomberg</p>
-  <p>
-    <a href="https://silburt.github.io/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://scholar.google.com/citations?user=d0MLLbsAAAAJ" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-    <a href="https://github.com/silburt" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/angie_wolfgang.jpg" alt="Angie Wolfgang" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Angie Wolfgang</a></h3>
-  <p class="member-role">Postdoc, PSU<br>Lead Data Scientists, National Grid</p>
-  <p>
-    <a href="https://www.linkedin.com/in/dr-angie-wolfgang/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/dawolfgang" title="GitHub"><i class="fab fa-github"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/daniel_jontofhutter.jpg" alt="Daniel Jontof-Hutter" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Daniel Jontof-Hutter</a></h3>
-  <p class="member-role">Postdoc, PSU<br>Faculty, University of the Pacific</p>
-  <p>
-    <a href="https://www.pacific.edu/campus-directory/daniel-jontof-hutter" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/darin_ragozzine.jpg" alt="Darin Ragozzine" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Darin Ragozzine</a></h3>
-  <p class="member-role">Postdoc, UF<br>Faculty, Brigham Young University</p>
-  <p>
-    <a href="https://www.physics.byu.edu/department/directory/ragozzine" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://scholar.google.com/citations?user=xQHmMn1DJEoC" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/sourav_chatterjee.jpg" alt="Sourav Chatterjee" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Sourav Chatterjee</a></h3>
-  <p class="member-role">Postdoc, UF<br>Reader, Tata Institute of Fundamental Research, Mumbai</p>
-  <p>
-    <a href="https://www.tifr.res.in/~sourav.c/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-    <a href="https://scholar.google.com/citations?user=o6PNiX0AAAAJ" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/aaron_boley.png" alt="Aaron Boley" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Aaron Boley</a></h3>
-  <p class="member-role">Postdoc & Sagan Fellow, UF<br>Faculty &amp; CRC Chair, University of British Columbia</p>
-  <p><a href="https://www.aaronboley.com/" title="Personal Website"><i class="fa-solid fa-house"></i></a></p>
-  
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/matthew_payne.jpg" alt="Matthew Payne" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Matthew Payne</a></h3>
-  <p class="member-role">Postdoc, UF<br>SAO Research Scientist, Harvard-Smithsonian Center for Astrophysics</p>
-  <p><a href="https://www.cfa.harvard.edu/people/matthew-payne" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-  <a href="https://scholar.google.com/citations?user=Tju1HpUAAAAJ&hl=en" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a></p>
-
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/althea_moorhead.jpg" alt="Althea Moorhead" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Althea Moorhead</a></h3>
-  <p class="member-role">Postdoc, UF<br>Space Scientist, NASA Marshall Space Flight Center</p>
-  <p>
-  <a href="https://www.linkedin.com/in/althea-moorhead-53659749" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-  <a href="https://scholar.google.com/citations?user=pcCAvxAAAAAJ&hl=en" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-  </p>
-  </div>
-</div>
-
-<div class="member-card">
-  <img src="/assets/images/people/dimitri_veras.png" alt="Dimitri Veras" class="member-image">
-  <div class="member-text">
-  <h3><a href="">Dimitri Veras</a></h3>
-  <p class="member-role">Postdoc, UF<br>Faculty, University of Warwick</p>
-  <p>
-  <p><a href="https://warwick.ac.uk/fac/sci/physics/research/astro/people/veras/" title="Personal Website"><i class="fa-solid fa-house"></i></a>
-  <a href="https://scholar.google.com/citations?user=Yyx3jh0AAAAJ&hl=en" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a></p>
-  
-  </p>
-  </div>
-</div>
+{{member_cards_from_dir_reverse former_postdocs}}
 ~~~
 
 ---
@@ -421,7 +51,6 @@
 - [Astrostaticians](astrostatisticans)
 - [NEID Science Team](https://neid.psu.edu/)
 - [Habitable Zone Planet Finder Science Team](https://hpf.psu.edu/)
-
 
 ---
 
@@ -435,3 +64,4 @@ If you are interested in joining our research group or the [Center for Exoplanet
 </div>
 </main>
 ~~~
+

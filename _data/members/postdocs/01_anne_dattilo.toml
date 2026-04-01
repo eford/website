@@ -1,0 +1,18 @@
+name         = "Anne Dattilo"
+display_name  = "Anne Dattilo"
+image         = "/assets/images/people/anne_datillo.jpg"
+profile_url   = "https://science.psu.edu/astro/people/axd5702"
+role          = "CEHW Postdoctoral Fellow & ICDS Rising Researcher"
+bio           = "Exploring new approaches to Simulation-based Inference for characterizing exoplanet populations."
+heading_level = "h3"
+sort_order    = 1
+
+[[links]]
+url   = "https://aedattilo.github.io/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://github.com/aedattilo"
+title = "GitHub"
+icon  = "fab fa-github"

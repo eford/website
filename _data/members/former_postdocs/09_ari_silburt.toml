@@ -1,0 +1,23 @@
+name         = "Ari Silburt"
+display_name  = "Ari Silburt"
+image         = "/assets/images/people/ari_silburt.jpg"
+profile_url   = ""
+role          = "Postdoc, PSU\nSoftware Engineer, Bloomberg"
+bio           = ""
+heading_level = "h3"
+sort_order    = 9
+
+[[links]]
+url   = "https://silburt.github.io/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://scholar.google.com/citations?user=d0MLLbsAAAAJ"
+title = "Google Scholar"
+icon  = "fa-solid fa-graduation-cap"
+
+[[links]]
+url   = "https://github.com/silburt"
+title = "GitHub"
+icon  = "fab fa-github"

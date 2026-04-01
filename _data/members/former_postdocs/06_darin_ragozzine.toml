@@ -1,0 +1,18 @@
+name         = "Darin Ragozzine"
+display_name  = "Darin Ragozzine"
+image         = "/assets/images/people/darin_ragozzine.jpg"
+profile_url   = ""
+role          = "Postdoc, UF\nFaculty, Brigham Young University"
+bio           = ""
+heading_level = "h3"
+sort_order    = 6
+
+[[links]]
+url   = "https://www.physics.byu.edu/department/directory/ragozzine"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://scholar.google.com/citations?user=xQHmMn1DJEoC"
+title = "Google Scholar"
+icon  = "fa-solid fa-graduation-cap"

@@ -1,0 +1,13 @@
+name         = "Robert Morehead"
+display_name  = "Robert Morehead"
+image         = "/assets/images/people/robert_morehead.jpg"
+profile_url   = ""
+role          = "PhD 2016, PSU\nAssociate Teaching Professor, PSU"
+bio           = ""
+heading_level = "h3"
+sort_order    = 5
+
+[[links]]
+url   = "https://science.psu.edu/astro/people/rcm242"
+title = "Personal Website"
+icon  = "fa-solid fa-house"

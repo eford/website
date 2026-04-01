@@ -1,0 +1,18 @@
+name         = "Sourav Chatterjee"
+display_name  = "Sourav Chatterjee"
+image         = "/assets/images/people/sourav_chatterjee.jpg"
+profile_url   = ""
+role          = "Postdoc, UF\nReader, Tata Institute of Fundamental Research, Mumbai"
+bio           = ""
+heading_level = "h3"
+sort_order    = 5
+
+[[links]]
+url   = "https://www.tifr.res.in/~sourav.c/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://scholar.google.com/citations?user=o6PNiX0AAAAJ"
+title = "Google Scholar"
+icon  = "fa-solid fa-graduation-cap"

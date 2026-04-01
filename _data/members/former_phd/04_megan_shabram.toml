@@ -1,0 +1,18 @@
+name         = "Megan Shabram"
+display_name  = "Megan Shabram"
+image         = "/assets/images/people/megan_shabram.jpg"
+profile_url   = ""
+role          = "PhD 2015, PSU\nGiant Magellan Telescope, Data Scientist"
+bio           = ""
+heading_level = "h3"
+sort_order    = 4
+
+[[links]]
+url   = "https://www.linkedin.com/in/meganshabram"
+title = "LinkedIn"
+icon  = "fa-brands fa-linkedin"
+
+[[links]]
+url   = "https://scholar.google.com/citations?user=VWg-V5IAAAAJ"
+title = "Google Scholar"
+icon  = "fa-solid fa-graduation-cap"

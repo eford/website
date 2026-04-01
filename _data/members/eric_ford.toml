@@ -1,0 +1,8 @@
+name         = "Eric Ford"
+display_name  = "Eric Ford"
+image         = "/assets/images/people/eric_ford.jpg"
+profile_url   = "/"
+role          = "Distinguished Professor"
+bio           = ""
+heading_level = "h2"
+sort_order    = 1

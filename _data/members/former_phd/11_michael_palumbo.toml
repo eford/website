@@ -1,0 +1,18 @@
+name         = "Michael Palumbo"
+display_name  = "Michael Palumbo"
+image         = "/assets/images/people/michael_palumbo.jpg"
+profile_url   = "michael_palumbo"
+role          = "PhD 2024, PSU\nFlatiron Research Fellow"
+bio           = ""
+heading_level = "h3"
+sort_order    = 11
+
+[[links]]
+url   = "https://michaelpalumbo.me/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://github.com/palumbom"
+title = "GitHub"
+icon  = "fab fa-github"

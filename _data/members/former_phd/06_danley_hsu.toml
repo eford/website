@@ -1,0 +1,13 @@
+name         = "Danley Hsu"
+display_name  = "Danley Hsu"
+image         = "/assets/images/people/danley_hsu.jpg"
+profile_url   = "danley_hsu"
+role          = "PhD 2020, PSU\nData Scientist, Johns Hopkins Applied Physics Lab"
+bio           = ""
+heading_level = "h3"
+sort_order    = 6
+
+[[links]]
+url   = "https://www.linkedin.com/in/danley-hsu-620324120"
+title = "LinkedIn"
+icon  = "fa-brands fa-linkedin"

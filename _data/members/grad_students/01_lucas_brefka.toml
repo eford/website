@@ -1,0 +1,13 @@
+name         = "Lucas Brefka"
+display_name  = "Lucas Brefka"
+image         = "/assets/images/people/lucas_brefka.jpg"
+profile_url   = "https://science.psu.edu/astro/people/lfb5454"
+role          = "PhD Student"
+bio           = "Formation of planetary systems, particularly systems that look nothing like our own. Computer simulations of planetesimal formation conditions and their effects on final planet properties."
+heading_level = "h3"
+sort_order    = 1
+
+[[links]]
+url   = "https://github.com/lucasbrefka"
+title = "GitHub"
+icon  = "fab fa-github"

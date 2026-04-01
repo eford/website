@@ -1,0 +1,13 @@
+name         = "Alex Wise"
+display_name  = "Alex Wise"
+image         = "/assets/images/people/alex_wise.jpg"
+profile_url   = ""
+role          = "Postdoc, PSU\nOptiver, Quantitative Researcher"
+bio           = ""
+heading_level = "h3"
+sort_order    = 13
+
+[[links]]
+url   = "https://www.linkedin.com/in/alexander-wise-a5193232/"
+title = "LinkedIn"
+icon  = "fa-brands fa-linkedin"

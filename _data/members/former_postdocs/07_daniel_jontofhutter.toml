@@ -1,0 +1,13 @@
+name         = "Daniel Jontof-Hutter"
+display_name  = "Daniel Jontof-Hutter"
+image         = "/assets/images/people/daniel_jontofhutter.jpg"
+profile_url   = ""
+role          = "Postdoc, PSU\nFaculty, University of the Pacific"
+bio           = ""
+heading_level = "h3"
+sort_order    = 7
+
+[[links]]
+url   = "https://www.pacific.edu/campus-directory/daniel-jontof-hutter"
+title = "Personal Website"
+icon  = "fa-solid fa-house"

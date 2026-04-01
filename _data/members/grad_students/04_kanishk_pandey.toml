@@ -1,0 +1,8 @@
+name         = "Kanishk Pandey"
+display_name  = "Kanishk Pandey"
+image         = "/assets/images/people/kanishk_pandey.jpg"
+profile_url   = "https://science.psu.edu/user/20782"
+role          = "PhD Student, NSF Graduate Research Fellow"
+bio           = "Developing stellar variability mitigation techniques for extreme precision radial velocity, exploring the potential of line-by-line measurements using NEID observations during solar eclipses."
+heading_level = "h3"
+sort_order    = 4
