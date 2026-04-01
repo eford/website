@@ -1,0 +1,18 @@
+name         = "Christian Gilbertson"
+display_name  = "Christian Gilbertson"
+image         = "/assets/images/people/christian_gilbertson.jpg"
+profile_url   = "christian_gilbertson"
+role          = "PhD 2023, PSU\nBlock, Sr. ML Engineer"
+bio           = ""
+heading_level = "h3"
+sort_order    = 10
+
+[[links]]
+url   = "https://www.linkedin.com/in/christian-gilbertson/"
+title = "LinkedIn"
+icon  = "fa-brands fa-linkedin"
+
+[[links]]
+url   = "https://github.com/christiangil"
+title = "GitHub"
+icon  = "fab fa-github"

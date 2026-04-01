@@ -1,0 +1,13 @@
+name         = "Rachel Fernandes"
+display_name  = "Rachel Fernandes"
+image         = "/assets/images/people/rachel_fernandes.jpg"
+profile_url   = "https://science.psu.edu/astro/people/rbf5378"
+role          = "CEHW Postdoctoral Fellow"
+bio           = "Connecting diverse observations of planetary systems to fundamental theories in planet formation. Currently working on detecting transiting planets in young clusters and comparing demographics with Kepler's Gyr-old population. <br>Co-Chair of NASA's ExoPAG Exoplanet Demographics Science Interest Group 2 (SIG2)."
+heading_level = "h3"
+sort_order    = 2
+
+[[links]]
+url   = "https://rbfernandes.wixsite.com/rbfernandes"
+title = "Personal Website"
+icon  = "fa-solid fa-house"

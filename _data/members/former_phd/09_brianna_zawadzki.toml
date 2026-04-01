@@ -1,0 +1,18 @@
+name         = "Brianna Zawadzki"
+display_name  = "Brianna Zawadzki"
+image         = "/assets/images/people/brianna_zawadzki.png"
+profile_url   = "brianna_zawadzki"
+role          = "PhD 2023, PSU, chair: Ian Czekala\nBrinson Prize Fellow, Wesleyan University"
+bio           = ""
+heading_level = "h3"
+sort_order    = 9
+
+[[links]]
+url   = "https://briannazawadzki.github.io/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://scholar.google.com/citations?user=3gY3XVMAAAAJ"
+title = "Google Scholar"
+icon  = "fa-solid fa-graduation-cap"

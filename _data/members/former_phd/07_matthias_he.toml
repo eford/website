@@ -1,0 +1,13 @@
+name         = "Matthias He"
+display_name  = "Matthias He"
+image         = "/assets/images/people/matthias_he.png"
+profile_url   = "matthias_he"
+role          = "PhD 2020, PSU\nNASA NPP Fellow, NASA Ames"
+bio           = ""
+heading_level = "h3"
+sort_order    = 7
+
+[[links]]
+url   = "https://hematthi.github.io/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"

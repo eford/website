@@ -1,0 +1,23 @@
+name         = "Evan Fitzmaurice"
+display_name  = "Evan Fitzmaurice"
+image         = "/assets/images/people/evan_fitzmaurice.png"
+profile_url   = "https://evanlfitz.github.io/"
+role          = "PhD Student"
+bio           = "Characterization of exoplanets and brown dwarfs using radial velocity observations with HPF and NEID, and astrometry from Gaia."
+heading_level = "h3"
+sort_order    = 2
+
+[[links]]
+url   = "https://evanlfitz.github.io/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://github.com/evanlfitz"
+title = "GitHub"
+icon  = "fab fa-github"
+
+[[links]]
+url   = "https://www.linkedin.com/in/evanfitzmaurice/"
+title = "LinkedIn"
+icon  = "fa-brands fa-linkedin"

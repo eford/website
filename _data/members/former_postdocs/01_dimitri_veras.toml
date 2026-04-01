@@ -1,0 +1,18 @@
+name         = "Dimitri Veras"
+display_name  = "Dimitri Veras"
+image         = "/assets/images/people/dimitri_veras.png"
+profile_url   = ""
+role          = "Postdoc, UF\nFaculty, University of Warwick"
+bio           = ""
+heading_level = "h3"
+sort_order    = 1
+
+[[links]]
+url   = "https://warwick.ac.uk/fac/sci/physics/research/astro/people/veras/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://scholar.google.com/citations?user=Yyx3jh0AAAAJ&hl=en"
+title = "Google Scholar"
+icon  = "fa-solid fa-graduation-cap"

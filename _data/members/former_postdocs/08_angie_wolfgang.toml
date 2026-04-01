@@ -1,0 +1,18 @@
+name         = "Angie Wolfgang"
+display_name  = "Angie Wolfgang"
+image         = "/assets/images/people/angie_wolfgang.jpg"
+profile_url   = ""
+role          = "Postdoc, PSU\nLead Data Scientist, National Grid"
+bio           = ""
+heading_level = "h3"
+sort_order    = 8
+
+[[links]]
+url   = "https://www.linkedin.com/in/dr-angie-wolfgang/"
+title = "LinkedIn"
+icon  = "fa-brands fa-linkedin"
+
+[[links]]
+url   = "https://github.com/dawolfgang"
+title = "GitHub"
+icon  = "fab fa-github"

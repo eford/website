@@ -1,0 +1,18 @@
+name         = "Laura Flagg"
+display_name  = "Laura Flagg"
+image         = "/assets/images/people/laura_flagg.png"
+profile_url   = "https://science.psu.edu/astro/people/lvf5358"
+role          = "CEHW Postdoctoral Fellow"
+bio           = "Characterizing exoplanet atmospheres with high-resolution spectroscopy, young exoplanets, and gas dispersal timescales in circumstellar disks."
+heading_level = "h3"
+sort_order    = 3
+
+[[links]]
+url   = "https://lauraflagg.github.io/"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
+
+[[links]]
+url   = "https://github.com/lauraflagg"
+title = "GitHub"
+icon  = "fab fa-github"

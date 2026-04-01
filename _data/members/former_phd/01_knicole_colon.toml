@@ -1,0 +1,18 @@
+name         = "Knicole Colón"
+display_name  = "Knicole Colón"
+image         = "/assets/images/people/knicole_colon.jpg"
+profile_url   = ""
+role          = "PhD 2012, UF\nAstrophysicist, NASA Goddard Space Flight Center"
+bio           = ""
+heading_level = "h3"
+sort_order    = 1
+
+[[links]]
+url   = "https://www.linkedin.com/in/knicole-colon-90737366"
+title = "LinkedIn"
+icon  = "fa-brands fa-linkedin"
+
+[[links]]
+url   = "https://science.gsfc.nasa.gov/astrophysics/cosmology/bio/knicole.colon"
+title = "Personal Website"
+icon  = "fa-solid fa-house"

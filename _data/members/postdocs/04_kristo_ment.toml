@@ -1,0 +1,13 @@
+name         = "Kristo Ment"
+display_name  = "Kristo Ment"
+image         = "/assets/images/people/kristo_ment.jpg"
+profile_url   = "https://science.psu.edu/astro/people/kxm821"
+role          = "CEHW Postdoctoral Fellow"
+bio           = "Terrestrial planets transiting M dwarfs and constraints on the occurrence of such worlds. Fast algorithms for searching for transits.<br>Data-driven methods for simultaneously modeling stellar and telluric variability."
+heading_level = "h3"
+sort_order    = 4
+
+[[links]]
+url   = "https://scholar.harvard.edu/kristoment"
+title = "Personal Website"
+icon  = "fa-solid fa-house"
