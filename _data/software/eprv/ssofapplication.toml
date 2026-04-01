@@ -1,0 +1,4 @@
+name        = "SSOFApplication.jl"
+url         = "https://github.com/christiangil/SSOFApplication"
+description = "Examples applying StellarSpectraObservationFitting.jl (SSOF) to NEID observations."
+sort_order  = 3

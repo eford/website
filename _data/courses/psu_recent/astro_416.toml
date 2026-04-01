@@ -1,0 +1,7 @@
+title       = "ASTRO 416: Data Science Applications to Astronomy"
+emoji       = "📈"
+meta        = "Upper-level undergraduate · Typically taught once every two years"
+description = "An upper-level undergraduate course providing an overview of data science skills, including statistical methods, data analysis, data visualization, and computational techniques for astronomical research."
+archive_url = "https://psuastro416.github.io/Spring2025"
+archive_label = "Course website & materials"
+sort_order  = 2

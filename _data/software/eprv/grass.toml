@@ -1,0 +1,4 @@
+name        = "GRASS"
+url         = "https://github.com/palumbom/GRASS"
+description = "Granulation and Stellar Spectra Simulator. Simulates the effects of solar/stellar granulation on radial velocity measurements."
+sort_order  = 1
