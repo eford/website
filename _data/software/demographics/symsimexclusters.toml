@@ -1,0 +1,4 @@
+name        = "SysSimExClusters"
+url         = "https://github.com/ExoJulia/SysSimExClusters"
+description = "Draw samples of planetary systems consistent with Kepler observations."
+sort_order  = 2

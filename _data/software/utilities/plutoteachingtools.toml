@@ -1,0 +1,4 @@
+name        = "PlutoTeachingTools.jl"
+url         = "https://github.com/JuliaPluto/PlutoTeachingTools.jl"
+description = "A collection of utilities to make Pluto notebooks more effective, particularly for creating educational tutorials."
+sort_order  = 2

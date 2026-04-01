@@ -1,0 +1,7 @@
+title       = "ASTRO 528: High-Performance Scientific Computing for Astrophysics"
+emoji       = "🖥"
+meta        = "Graduate · Typically taught once every two years"
+description = "A graduate course introducing modern techniques for computationally intensive astrophysical research, including parallel computing (shared memory, distributed, GPU), the Julia programming language, software development skills, testing, benchmarking and optimization, and reproducible scientific computing."
+archive_url = "https://psuastro528.github.io/Fall2025"
+archive_label = "Course website & materials"
+sort_order  = 3

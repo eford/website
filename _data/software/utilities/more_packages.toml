@@ -1,0 +1,4 @@
+name        = "More Packages"
+url         = "https://github.com/eford"
+description = "See my GitHub profile for additional tools, course materials, and research code."
+sort_order  = 3

@@ -20,40 +20,9 @@ I emphasize active learning and providing hands-on experience with real data and
 
 ## Penn State
 ### Recent Courses
+
 ~~~
-<div class="course-card">
-  <h3>🌌 ASTRO 140: Life in the Universe</h3>
-  <p class="course-meta">Introductory undergraduate · General education · Taught by different instructors most Spring/Fall semesters</p>
-  <p>An introductory course exploring the scientific search for life beyond Earth, from the origins of life on our planet to the detection and characterization of exoplanets and the prospects for finding biosignatures.</p>
-</div>
-
-<div class="course-card">
-  <h3>📈 ASTRO 416: Data Science Applications to Astronomy</h3>
-  <p class="course-meta">Upper-level undergraduate · Typically taught once every two years</p>
-  <p> An upper-level undergraduate course providing an overview of data science skills, including statistical methods, data analysis, data visualization, and computational techniques for astronomical research.</p>
-  <!-- <p>📎 Archived <a href="https://psuastro416.github.io/Spring2025">Course website &amp; materials</a> -->
-</div>
-
-<div class="course-card">
-  <h3>🖥 ASTRO 528: High-Performance Scientific Computing for Astrophysics</h3>
-  <p class="course-meta">Graduate · Typicallly taught once every two years</p>
-  <p> A graduate course introducing modern techniques for computationally intensive astrophysical research, including parallel computing (shared memory, distributed, GPU), the Julia programming language, software development skills, testing, benchmarking and optimization, and reproducible scientific computing.</p>
-  <!-- <p>📎 Archived <a href="https://psuastro528.github.io/Fall2025">Course website &amp; materials</a></p> -->
-</div>
-
-<div class="course-card">
-  <h3>🌈⃤ ASTRO 589: Seminar — Extremely Precise Radial Velocity Surveys</h3>
-  <p class="course-meta">Graduate seminar · Topics and instructors change each semester</p>
-  <p> A graduate seminar covering the latest developments in EPRV science, instrumentation, and data analysis.</p>
-  <!-- <p>📎 Archived <a href="https://eford.github.io/PsuAstro589Fall2024/">Course website &amp; materials</a></p> -->
-
-</div>
-
-<div class="course-card">
-  <h3>🧬 ABIOL 590: Astrobiology Seminar</h3>
-  <p class="course-meta">Graduate seminar · Typically taught once every two years</p>
-  <p> A graduate seminar about recent advances in Astrobiology that emphasizes building interdisciplinary communications skills.</p>
-</div>
+{{course_cards_from_dir psu_recent}}
 ~~~
 
 ---
@@ -80,7 +49,6 @@ I can serve as a faculty representative for the [Graduate Computational Minor](h
 - Ast 6935: Frontiers of Astronomy
 
 ---
-
 
 ~~~
 </div>

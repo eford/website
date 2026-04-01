@@ -1,0 +1,4 @@
+name        = "ExoplanetsSysSim.jl"
+url         = "https://github.com/ExoplanetsSysSim"
+description = "Forward modeling framework for exoplanet demographics. Used to characterize the architectures of planetary systems from Kepler data."
+sort_order  = 1

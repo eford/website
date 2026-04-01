@@ -1,0 +1,4 @@
+name        = "ExpectationMaximizationPCA.jl"
+url         = "https://github.com/christiangil/ExpectationMaximizationPCA.jl"
+description = "Julia code for computing a \"weighted\" PCA using EM algorithm."
+sort_order  = 1
