@@ -6,3 +6,4 @@ Manifest.toml
 *~
 node_modules/
 .env
+.ads_config

@@ -368,3 +368,183 @@ function hfun_software_cards_from_dir(params)
     write(io, "</div>\n")
     return String(take!(io))
 end
+
+
+
+
+# ---------------------------------------------------------------------------
+# Publication citation builder
+# ---------------------------------------------------------------------------
+
+"""
+    format_authors(author_string) -> String
+
+Parse an ADS-format author string ("Last, F. I. and Last, F. I. and...")
+and return a formatted string. If more than 3 authors, returns "Last, F. I. et al."
+"""
+function format_authors(author_string::String)
+    isempty(author_string) && return ""
+    authors = strip.(split(author_string, " and "))
+    if length(authors) <= 3
+        return join(authors, ", ")
+    else
+        return "$(authors[1]) et al."
+    end
+end
+
+"""
+    format_citation(data) -> String
+
+Generate a formatted HTML citation string from a publication TOML dict.
+
+Format:
+    <strong>Title</strong>
+    Author(s) (Year), <em>Journal</em>, Volume, Pages.
+    <a href=adsurl>abstract</a> <a href=doi>doi</a>
+"""
+function format_citation(data::Dict)::String
+    title   = get(data, "title",   "")
+    authors = get(data, "author",  "")
+    year    = get(data, "year",    "")
+    journal = get(data, "journal", "")
+    volume  = get(data, "volume",  "")
+    pages   = get(data, "pages",   "")
+    adsurl  = get(data, "adsurl",  "")
+    doi     = get(data, "doi",     "")
+
+    author_str = format_authors(authors)
+
+    # Build the journal info segment, omitting missing fields
+    journal_parts = String[]
+    !isempty(journal) && push!(journal_parts, "<em>$journal</em>")
+    !isempty(volume)  && push!(journal_parts, volume)
+    !isempty(pages)   && push!(journal_parts, pages)
+    journal_str = join(journal_parts, ", ")
+
+    # Build the main citation line
+    byline_parts = String[]
+    !isempty(author_str) && push!(byline_parts, author_str)
+    !isempty(year)       && push!(byline_parts, "($year)")
+    citation_line = join(byline_parts, " ")
+    !isempty(journal_str) && (citation_line *= ", $journal_str.")
+
+    # Append links
+    !isempty(adsurl) && (citation_line *= """ <a href="$adsurl">abstract</a>""")
+    !isempty(doi)    && (citation_line *= """ <a href="https://doi.org/$doi">doi</a>""")
+
+    return """<strong>$title</strong><br>\n$citation_line"""
+end
+
+# ---------------------------------------------------------------------------
+# Publication loading and filtering
+# ---------------------------------------------------------------------------
+
+"""
+    load_publications(pub_dir) -> Vector{Dict}
+
+Read all TOML files from `_data/publications/` (recursing into year
+subdirectories) and return them as a vector of dicts, each augmented with
+a `_path` key for debugging.
+"""
+function load_publications(pub_dir::String = "_data/publications")::Vector{Dict}
+    pubs = Dict[]
+    isdir(pub_dir) || return pubs
+    for (root, dirs, files) in walkdir(pub_dir)
+        sort!(dirs)
+        for f in sort(files)
+            endswith(f, ".toml") || continue
+            path = joinpath(root, f)
+            data = TOML.parsefile(path)
+            data["_path"] = path
+            push!(pubs, data)
+        end
+    end
+    return pubs
+end
+
+"""
+    filter_publications(pubs, research_theme; tags=[]) -> Vector{Dict}
+
+Filter a vector of publication dicts.
+
+- `research_theme`: required string; publication must include it in its
+  `research_themes` array (case-insensitive).
+- `tags`: optional vector of strings; if non-empty, the publication must
+  match at least one tag (OR logic, case-insensitive).
+"""
+function filter_publications(
+    pubs::Vector{Dict},
+    research_theme::String;
+    tags::Vector{String} = String[]
+)::Vector{Dict}
+    theme_lc = lowercase(strip(research_theme))
+    tags_lc  = lowercase.(strip.(tags))
+
+    return filter(pubs) do pub
+        # Check research_theme (required)
+        pub_themes = lowercase.(strip.(get(pub, "research_themes", String[])))
+        theme_match = any(t -> t == theme_lc, pub_themes)
+        !theme_match && return false
+
+        # Check tags (optional; OR logic)
+        isempty(tags_lc) && return true
+        pub_tags = lowercase.(strip.(get(pub, "tags", String[])))
+        return any(tag -> tag in pub_tags, tags_lc)
+    end
+end
+
+"""
+    sort_publications_by_year(pubs) -> Vector{Dict}
+
+Sort publications newest-first by year, then alphabetically by
+first author within the same year.
+"""
+function sort_publications_by_year(pubs::Vector{Dict})::Vector{Dict}
+    return sort(pubs, by = p -> (
+        -parse(Int, get(p, "year", "0")),
+         get(p, "author", "")
+    ))
+end
+
+# ---------------------------------------------------------------------------
+# hfun: filtered publication list
+# ---------------------------------------------------------------------------
+
+"""
+    hfun_publication_list(params) -> String
+
+Render an HTML bulleted list of formatted citations filtered by research
+theme and optionally by tags.
+
+Usage in.md:
+    {{publication_list exoplanet_demographics}}
+    {{publication_list radial_velocity neid eprv}}
+
+First parameter:  research_theme (required)
+Remaining params: tags (optional, OR logic)
+"""
+function hfun_publication_list(params)
+    isempty(params) && return ""
+
+    research_theme = replace(params[1], "_" => " ")
+    tags = length(params) > 1 ?
+        [replace(p, "_" => " ") for p in params[2:end]] :
+        String[]
+
+    pubs    = load_publications()
+    matched = filter_publications(pubs, research_theme; tags=tags)
+    sorted  = sort_publications_by_year(matched)
+
+    if isempty(sorted)
+        return "<p><em>No publications found matching the specified theme/tags.</em></p>\n"
+    end
+
+    io = IOBuffer()
+    write(io, "<ul>\n")
+    for pub in sorted
+        citation = format_citation(pub)
+        write(io, "  <li>$citation</li>\n")
+    end
+    write(io, "</ul>\n")
+    return String(take!(io))
+end
