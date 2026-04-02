@@ -7,7 +7,7 @@ and writes one TOML file per publication to _data/publications/YEAR/.
 
 Usage (run from site root):
     julia --project=scripts/parse_publications scripts/parse_publications/parse_publications.jl references.bib
-    julia --project=scripts/parse_publications scripts/parse_publications/parse_publications.jl references.bib --config.ads_config
+    julia --project=scripts/parse_publications scripts/parse_publications/parse_publications.jl references.bib --config .ads_config
     julia --project=scripts/parse_publications scripts/parse_publications/parse_publications.jl references.bib --skip-ads
     julia --project=scripts/parse_publications scripts/parse_publications/parse_publications.jl references.bib --dry-run
 """
@@ -31,6 +31,7 @@ const ADS_MACROS = Dict(
     "\\pasp"     => "PASP",
     "\\pasa"     => "PASA",
     "\\pasj"     => "PASJ",
+    "\\na"      => "New Astronomy",
     "\\nat"      => "Nature",
     "\\natast"   => "Nature Astronomy",
     "\\sci"      => "Science",
@@ -71,6 +72,7 @@ const LATEX_UNICODE = Dict(
     "\\odot"     => "⊙",  "\\oplus"    => "⊕",  "\\circ"     => "°",
     "\\AA"       => "Å",  "\\deg"      => "°",
     "\\,"        => " ",  "\\ "        => " ",  "\\;"        => " ",
+    "\\'o"       => "ó",  "\\'e"       => "é", 
 )
 
 const SUPERSCRIPT_MAP = Dict(
@@ -412,7 +414,7 @@ function load_config(path::String)::Dict{String,String}
         isempty(line) && continue
         startswith(line, "#") && continue
         if contains(line, "=")
-            key, _, val = partition(line, "=")
+            key, val = split(line, "="; limit=2)
             config[strip(key)] = strip(val)
         end
     end
@@ -429,7 +431,7 @@ end
 Query the ADS API for the abstract of a paper identified by `bibcode`.
 Returns an empty string on failure.
 """
-function fetch_abstract(bibcode::String, api_key::String; delay::Float64=0.5)::String
+function fetch_abstract(bibcode::AbstractString, api_key::String; delay::Float64=0.5)::String
     # Strip to bare bibcode if a full URL was passed
     bibcode = last(split(rstrip(bibcode, '/'), '/'))
 
@@ -685,7 +687,9 @@ function main()
         out_path  = joinpath(args.outdir, year, filename)
         title     = clean_value(get(entry, "title", "(no title)"))
         short_title = length(title) > 72 ? title[1:72] * "..." : title
-
+        if filesize(out_path) >0
+            continue
+        end
         println("  $filename")
         println("    Title:  $short_title")
 

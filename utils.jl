@@ -435,6 +435,36 @@ function format_citation(data::Dict)::String
     return """<strong>$title</strong><br>\n$citation_line"""
 end
 
+"""
+    hfun_pub(params) -> String
+
+Render a single publication citation from a TOML file.
+
+Usage in.md:
+    {{pub 2024 Ford_2024}}
+
+First parameter:  year
+Second parameter: filename (without.toml extension)
+"""
+function hfun_pub(params)
+    length(params) == 1 || error("hfun_pub requires exactly one parameter: filename (LastName_Year[a], excluding .toml suffix")
+    filename     = params[1]
+    m = match(r"\w+_(\d+)\w?$",filename)
+    if length(m.captures) == 1
+        year = first(m.captures)
+    else
+        @warn "hfun_pub: failed to extract filesname from $params"
+        return ""
+    end
+    path     = joinpath("_data", "publications", year, filename * ".toml")
+    if !isfile(path)
+        @warn "hfun_pub: file not found — $path"
+        return ""
+    end
+    data = TOML.parsefile(path)
+    return "<p> " * format_citation(data) * " </p>"
+end
+
 # ---------------------------------------------------------------------------
 # Publication loading and filtering
 # ---------------------------------------------------------------------------
