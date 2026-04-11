@@ -1,0 +1,12 @@
+Exoplanet Surveys
+Radial Velocity Surveys
+Solar Observations
+Mitigating Stellar Variability
+Transit Surveys
+Exoplanet Demographics
+Planetary Architectures
+Orbital Dynamics & Planet Formation
+Astrostatistics & Astroinformatics
+High-Performance Computing
+Astrobiology
+
