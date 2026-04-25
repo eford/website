@@ -7,5 +7,25 @@
     </p>
   </div>
 </footer>
+<script>
+(function () {
+  // Issue 5 — give the main content element the id the skip-link targets
+  var main = document.querySelector('main.site-main, main, .site-main');
+  if (main && !main.id) { main.id = 'site-content'; }
+
+  // Issue 4 — keep aria-expanded on the nav-toggle in sync with menu state
+  var btn = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.nav-links');
+  if (btn && nav) {
+    if (!nav.id) { nav.id = 'primary-nav'; }
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-controls', 'primary-nav');
+    btn.addEventListener('click', function () {
+      // The inline onclick has already toggled the class by the time this runs
+      btn.setAttribute('aria-expanded', nav.classList.contains('open') ? 'true' : 'false');
+    });
+  }
+})();
+</script>
 </body>
 </html>

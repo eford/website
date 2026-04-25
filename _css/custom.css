@@ -32,6 +32,43 @@ h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
 p  { margin: 0.8em 0; }
 
+/* ===== Skip Navigation Link (WCAG 2.4.1) ===== */
+/* position:fixed + translateY(-100%) keeps it entirely above the viewport —
+   no layout space, no pixel artifacts — until keyboard focus pulls it in. */
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  z-index: 10000;
+  padding: 0.75rem 1.5rem;
+  background: var(--psu-navy);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid var(--psu-accent);
+  outline-offset: 2px;
+}
+
+/* ===== Focus Indicators (WCAG 2.4.11 — new in WCAG 2.2) ===== */
+/* Remove browser default so we can supply a consistent, on-brand ring */
+:focus { outline: none; }
+:focus-visible {
+  outline: 3px solid var(--psu-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+/* On the dark navy header, use white so the ring is visible */
+.site-header :focus-visible,
+.nav-toggle:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
 /* ===== Header / Navigation ===== */
 .site-header {
   background: var(--psu-navy);
@@ -69,7 +106,18 @@ p  { margin: 0.8em 0; }
   text-decoration: none;
 }
 .nav-link:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
-.nav-toggle { display: none; background: none; border: none; color: #fff; font-size: 1.3rem; cursor: pointer; }
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  /* WCAG 2.5.8 — minimum 24×24 px target; use 44px (iOS/Android HIG) */
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem;
+}
 
 /* ===== Main Content ===== */
 .site-main {
@@ -108,13 +156,20 @@ p  { margin: 0.8em 0; }
 .hero-text .affiliations a { color: var(--psu-blue); }
 
 /* Social icons */
-.social-icons { display: flex; gap: 0.8rem; margin: 1rem 0; }
+.social-icons { display: flex; gap: 0.4rem; margin: 1rem 0; flex-wrap: wrap; }
 .social-icons a {
   color: var(--psu-blue);
   font-size: 1.4rem;
   transition: color 0.2s;
+  /* WCAG 2.5.8 — minimum 24×24 px; 44×44 meets iOS/Android HIG */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 6px;
 }
-.social-icons a:hover { color: var(--psu-accent); text-decoration: none; }
+.social-icons a:hover { color: var(--psu-accent); text-decoration: none; background: rgba(0, 156, 222, 0.08); }
 
 /* ===== Cards ===== */
 .card-grid {
@@ -157,8 +212,8 @@ p  { margin: 0.8em 0; }
 }
 /* Optional: Ensures text doesn't hit the edge */
 .member-text {
-  display: grid; /* Creates the side-by-side layout */
-  align-items: left; /* Vertically centers text with image */
+  display: grid;
+  align-items: flex-start; /* was "left" — invalid CSS value, corrected */
   flex: 1;
   font-weight: 600;
   font-size: 1.0rem;
@@ -191,6 +246,11 @@ p  { margin: 0.8em 0; }
 }
 
 /* ===== Publication List ===== */
+/* .pub-title is emitted by format_citation() in utils.jl (replaces <strong>) */
+.pub-title {
+  font-weight: 600;
+  color: var(--psu-navy);
+}
 .pub-entry {
   padding: 0.8rem 0;
   border-bottom: 1px solid #e8e8e8;
@@ -270,6 +330,21 @@ pre code { padding: 1rem; background: #f8f9fa; }
   margin-top: 2rem;
 
 
+}
+
+/* ===== Reduced Motion (WCAG 2.3.3 / prefers-reduced-motion) ===== */
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  .nav-link,
+  .social-icons a {
+    transition: none;
+  }
 }
 
 /* Table of Contents */

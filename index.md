@@ -25,14 +25,12 @@
       <a href="https://www.psu.edu/">Penn State University</a>
     </p>
     <div class="social-icons">
-      <a href="mailto:ebf11@psu.edu" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Ford%2C+Eric+B.%22&sort=date+desc" title="NASA ADS"><i class="ai ai-ads"></i></a>
-      <a href="https://scholar.google.com/citations?user=TePFO-YAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-      <a href="https://orcid.org/0000-0001-6545-639X" title="ORCID"><i class="ai ai-orcid"></i></a>
-      
-      <a href="https://github.com/eford" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/eric-ford-63a3a31b" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-
+      <a href="mailto:ebf11@psu.edu" title="Email" aria-label="Email Eric Ford"><i class="fas fa-envelope"></i></a>
+      <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Ford%2C+Eric+B.%22&sort=date+desc" title="NASA ADS" aria-label="NASA ADS publications"><i class="ai ai-ads"></i></a>
+      <a href="https://scholar.google.com/citations?user=TePFO-YAAAAJ" title="Google Scholar" aria-label="Google Scholar profile"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://orcid.org/0000-0001-6545-639X" title="ORCID" aria-label="ORCID profile"><i class="ai ai-orcid"></i></a>
+      <a href="https://github.com/eford" title="GitHub" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/eric-ford-63a3a31b" title="LinkedIn" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </div>
 </div>

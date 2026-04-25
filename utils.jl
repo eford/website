@@ -65,7 +65,8 @@ function member_card_html(data::Dict)
 
     links_html = if !isempty(links)
         inner = join([
-            """    <a href="$(l["url"])" title="$(l["title"])"><i class="$(l["icon"])"></i></a>"""
+            # aria-label is the reliable accessible name for icon-only links (WCAG 1.1.1 / 4.1.2)
+            """    <a href="$(l["url"])" aria-label="$(l["title"])" title="$(l["title"])"><i class="$(l["icon"])"></i></a>"""
             for l in links
         ], "\n")
         "  <p>\n$inner\n  </p>\n"
@@ -75,10 +76,14 @@ function member_card_html(data::Dict)
 
     bio_html = isempty(bio) ? "" : "  <p>$bio</p>\n"
 
+    # WCAG 2.4.4 — only wrap in <a> when a url is actually present; empty href
+    # resolves to the current page and creates a confusingly-named in-page link.
+    name_html = isempty(profile_url) ? display : """<a href="$profile_url">$display</a>"""
+
     return """<div class="member-card">
   <img src="$image" alt="$name" class="member-image">
   <div class="member-text">
-  <$hlevel><a href="$profile_url">$display</a></$hlevel>
+  <$hlevel>$name_html</$hlevel>
   <p class="member-role">$role_html</p>
 $bio_html$links_html  </div>
 </div>
@@ -377,6 +382,19 @@ end
 # ---------------------------------------------------------------------------
 
 """
+    escape_attr(s) -> String
+
+Escape a string for safe use inside an HTML attribute value (double-quoted).
+"""
+function escape_attr(s::String)::String
+    s = replace(s, "&"  => "&amp;")
+    s = replace(s, "\"" => "&quot;")
+    s = replace(s, "<"  => "&lt;")
+    s = replace(s, ">"  => "&gt;")
+    return s
+end
+
+"""
     format_authors(author_string) -> String
 
 Parse an ADS-format author string ("Last, F. I. and Last, F. I. and...")
@@ -428,11 +446,15 @@ function format_citation(data::Dict)::String
     citation_line = join(byline_parts, " ")
     !isempty(journal_str) && (citation_line *= ", $journal_str.")
 
-    # Append links
-    !isempty(adsurl) && (citation_line *= """ <a href="$adsurl">abstract</a>""")
-    !isempty(doi)    && (citation_line *= """ <a href="https://doi.org/$doi">doi</a>""")
+    # Append links — aria-label gives screen-reader users the full context
+    # (WCAG 2.4.4: link purpose determinable from link text alone)
+    title_attr = escape_attr(title)
+    !isempty(adsurl) && (citation_line *= """ <a href="$adsurl" aria-label="Abstract for $title_attr">abstract</a>""")
+    !isempty(doi)    && (citation_line *= """ <a href="https://doi.org/$doi" aria-label="DOI for $title_attr">doi</a>""")
 
-    return """<strong>$title</strong><br>\n$citation_line"""
+    # Use <span class="pub-title"> rather than <strong>: bold is visual styling
+    # here, not a semantic importance signal (WCAG / HTML semantics best practice)
+    return """<span class="pub-title">$title</span><br>\n$citation_line"""
 end
 
 """
@@ -569,8 +591,11 @@ function hfun_publication_list(params)
         return "<p><em>No publications found matching the specified theme/tags.</em></p>\n"
     end
 
+    # aria-label distinguishes multiple publication lists on the same page
+    # when a screen-reader user navigates by list landmarks (WCAG usability)
+    theme_label = escape_attr(titlecase(research_theme))
     io = IOBuffer()
-    write(io, "<ul>\n")
+    write(io, """<ul aria-label="Publications: $theme_label">\n""")
     for pub in sorted
         citation = format_citation(pub)
         write(io, "  <li>$citation</li>\n")
