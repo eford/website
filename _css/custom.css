@@ -119,6 +119,16 @@ p  { margin: 0.8em 0; }
   padding: 0.5rem;
 }
 
+/* ===== Suppress Franklin front-matter artifacts ===== */
+/* Every page's "---" separator is rendered as <hr /> as the first child of
+   .franklin-content, and the immediately following <p> wraps the re-inserted
+   layout HTML. Both produce the white band + thin line at the top of every
+   page. Hiding them here has no effect on any intentional content. */
+.franklin-content > hr:first-child,
+.franklin-content > hr:first-child + p {
+  display: none;
+}
+
 /* ===== Main Content ===== */
 .site-main {
   max-width: var(--max-width);
