@@ -30,6 +30,10 @@ Our group develops and maintains several open-source software packages, primaril
 {{software_cards_from_dir utilities}}
 ~~~
 
+#  Mini-Symposia on Julia in Astronomy & Astrophysics Research
+- [JuliaCon 2025](https://eford.github.io/AstroMiniSymposiumAtJuliaCon2025/)
+- [JuliaCon 2022](https://eford.github.io/AstroMiniSymposiumAtJuliaCon2022/)
+
 ~~~
 </div>
 </main>

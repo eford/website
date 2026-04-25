@@ -1,0 +1,4 @@
+name        = "RVSpectML"
+url         = "https://github.com/RvSpectML/RvSpectML-Overview"
+description = "A set of julia pacakges for analyzing Echelle spectra, optimizing for NEID solar observaitons"
+sort_order  = 5

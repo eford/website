@@ -1,0 +1,4 @@
+name        = "GPLinearODEMaker.jl"
+url         = "https://github.com/christiangil/GPLinearODEMaker.jl"
+description = """provides the likelihood (and derivatives thereof) of multivariate Gaussian processes (GP) that are composed of a linear combination of a univariate GP and its derivatives.  See also <a href="https://github.com/eford/GLOM_RV_Example">GLOM_RV_Example repository</a> for example."""
+sort_order  = 4

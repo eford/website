@@ -1,0 +1,4 @@
+name        = "ApproximateBayesianComputing.jl"
+url         = "https://github.com/eford/ApproximateBayesianComputing.jl"
+description = "Algorithms for Approximate Bayesian Computing via Particle Monte Carlo (ABC-PMC)."
+sort_order  = 4
