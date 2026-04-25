@@ -14,8 +14,8 @@
 \toc
 I emphasize active learning and providing hands-on experience with real data and modern computational tools.  I developed two courses (Astro 416 &amp; Astro 528) courses that emphasize:
 - **Fundamental concepts**  — lab tutorials start as low-code, emphasizing concepts over syntax.  As students gain experience, they start modifying code, and eventually work up to developing a quality scientific code or dashboard to support a project of their own design.
-- **Modern software development practices** — selected courses use [Julia](https://julialang.org/) for high-level, performant, scientific computing, while teaching modern software development skills as such as version control, literate programming, and automated testing.
 - **Real scientific data** — students work with actual astronomical datasets.
+- **Software development practices** — selected courses use [Julia](https://julialang.org/) for high-level, performant, scientific computing, while teaching modern software development skills as such as version control, literate programming, and automated testing.
 
 
 ## Penn State

@@ -188,13 +188,12 @@ function course_card_html(data::Dict)
     heading = isempty(emoji) ? title : "$emoji $title"
 
     
-    archive_html = ""
-    #= if !isempty(archive_url)
+    archive_html = if !isempty(archive_url)
         """  <p>📎 Archived <a href="$archive_url">$archive_label</a></p>\n"""
     else
         ""
     end
-    =# 
+    
     return """<div class="course-card">
   <h3>$heading</h3>
   <p class="course-meta">$meta</p>
