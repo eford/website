@@ -1,4 +1,4 @@
 name        = "StellarSpectraObservationFitting.jl"
 url         = "https://github.com/christiangil/StellarSpectraObservationFitting.jl"
-description = "Data-driven modeling of telluric features and stellar variability in high-resolution spectra."
+description = """Data-driven modeling of telluric features and stellar variability in high-resolution spectra.  See also <a href="https://github.com/christiangil/SSOFApplication">SSOFApplication</a> for example applications."""
 sort_order  = 2
