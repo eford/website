@@ -1,0 +1,4 @@
+name        = "Greatly Expedited Robust Box Least Squares (GRBLS)"
+url         = "https://github.com/kment/GERBLS"
+description = "lightweight fast-folding implementation of the BLS (Box Least Squares) algorithm"
+sort_order  = 3
