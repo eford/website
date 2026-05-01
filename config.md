@@ -9,6 +9,7 @@
 @def website_title = "Eric Ford"
 @def website_descr = "Personal homepage for Eric Ford"
 @def website_url   = "https://eford.github.io/"
+@def tag = ""
 
 <!-- Navigation bar items -->
 +++

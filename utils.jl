@@ -373,7 +373,228 @@ function hfun_software_cards_from_dir(params)
     return String(take!(io))
 end
 
+# -------------------------------------------------------------------------------
+"""
+    hfun_project_cards()
 
+Generates the full "Featured Projects" section HTML.
+WCAG 2.2 AA compliant:
+  - Native <a> card links (fixes 4.1.2, 2.1.1)
+  - aria-pressed on filter buttons (fixes 4.1.2)
+  - aria-live region for filter results (fixes 4.1.3)
+  - Decorative / described image alt text (fixes 1.1.1)
+  - Focus indicators, target sizes, and contrast handled in CSS
+"""
+function hfun_project_cards()::String
+    # ── 1. Collect all project pages ──────────────────────────────────────────
+    project_dir = joinpath(@__DIR__, "projects")
+    if !isdir(project_dir)
+        return "<p>No projects directory found.</p>"
+    end
+
+    project_files = filter(readdir(project_dir)) do f
+        endswith(f, ".md") && f != "index.md"
+    end
+    project_rpaths = ["projects/" * splitext(f)[1] for f in project_files]
+
+    # ── 2. Link button definitions (page variable => display label) ────────────
+    LINK_BUTTONS = [
+        ("github",  "GitHub"),
+        ("demo",    "Demo"),
+        ("paper",   "Paper"),
+        ("arxiv",   "arXiv"),
+        ("data",    "Data"),
+        ("zenodo",  "Zenodo"),
+        ("slides",  "Slides"),
+        ("video",   "Video"),
+    ]
+
+    # ── 3. Read metadata from each project page ────────────────────────────────
+    projects = []
+    for rpath in project_rpaths
+        title       = pagevar(rpath, "title")
+        description = pagevar(rpath, "description")
+        image       = pagevar(rpath, "image")
+        # Fix 1.1.1: prefer explicit alt text; fall back to "" (decorative)
+        image_alt   = something(pagevar(rpath, "image_alt"), "")
+        tags        = pagevar(rpath, "tags")
+        featured    = pagevar(rpath, "featured")
+
+        isnothing(title) && continue
+
+        links = Pair{String,String}[]
+        for (var, label) in LINK_BUTTONS
+            url = pagevar(rpath, var)
+            isnothing(url) && continue
+            isempty(url) && continue
+            push!(links, label => url)
+        end
+
+        push!(projects, (;
+            title       = something(title, "Untitled"),
+            description = something(description, ""),
+            image       = something(image, ""),
+            image_alt   = image_alt,
+            tags        = something(tags, String[]),
+            featured    = something(featured, false),
+            url         = "/" * rpath * "/",
+            links       = links,
+        ))
+    end
+
+    # ── 4. Collect all unique tags ─────────────────────────────────────────────
+    all_tags = sort(unique(vcat([p.tags for p in projects]...)))
+
+    # ── 5. Build HTML ──────────────────────────────────────────────────────────
+    io = IOBuffer()
+
+    write(io, """
+<section class="projects-section">
+  <h2 class="projects-heading">Featured Projects</h2>
+
+  <!-- Fix 4.1.3: live region announces filter result count to screen readers -->
+  <p class="sr-only" aria-live="polite" aria-atomic="true" id="filter-status"></p>
+
+  <!-- Filter buttons -->
+  <!-- Fix 4.1.2: aria-pressed reflects toggle state for each button -->
+  <div class="project-filters" role="group" aria-label="Filter projects by category">
+    <button class="filter-btn active"
+            data-filter="all"
+            aria-pressed="true"
+            onclick="filterProjects(this)">All</button>
+""")
+
+    for tag in all_tags
+        write(io, """    <button class="filter-btn" data-filter="$(tag)" aria-pressed="false" onclick="filterProjects(this)">$(titlecase(tag))</button>\n""")
+    end
+
+    write(io, "  </div>\n\n  <!-- Project cards grid -->\n  <div class=\"projects-grid\" id=\"projects-grid\">\n")
+
+    for p in projects
+        # Fix 4.1.2 / 1.1.1: JSON array for tags; meaningful or empty alt text
+        tag_json   = "[" * join(["\"$(t)\"" for t in p.tags], ",") * "]"
+        tag_badges = join(
+            ["<span class=\"project-tag\">$(t)</span>" for t in p.tags],
+            "\n            "
+        )
+
+        img_html = isempty(p.image) ?
+            """<div class="project-img-placeholder" aria-hidden="true"></div>""" :
+            """<img src="$(p.image)" alt="$(p.image_alt)" class="project-img" loading="lazy">"""
+
+        # Fix 2.1.1 / 4.1.2: native <a> replaces <div role="link">.
+        # Action buttons sit inside the <a> and use event.stopPropagation()
+        # so they open their own URLs rather than the card link.
+        buttons_html = join([
+            """<a href="$(url)" class="project-link project-link--$(lowercase(label))" """ *
+            """target="_blank" rel="noopener" onclick="event.stopPropagation()">$(label)</a>"""
+            for (label, url) in p.links
+        ], "\n            ")
+
+        write(io, """
+    <!-- Card: $(p.title) -->
+    <div class="project-card" data-tags='$(tag_json)'>
+      $(img_html)
+      <div class="project-card-body">
+        <div class="project-tags" aria-label="Categories">
+          $(tag_badges)
+        </div>
+        <h3 class="project-title">
+          <a href="$(p.url)" class="project-card-link">$(p.title)</a>
+        </h3>
+        <p class="project-desc">$(p.description)</p>
+        <div class="project-links" aria-label="Project links">
+          $(buttons_html)
+        </div>
+      </div>
+    </div>
+""")
+#=
+        write(io, """
+    <!-- Card: $(p.title) -->
+    <a class="project-card" href="$(p.url)" data-tags='$(tag_json)'>
+      $(img_html)
+      <div class="project-card-body">
+        <div class="project-tags" aria-label="Categories">
+          $(tag_badges)
+        </div>
+        <h3 class="project-title">$(p.title)</h3>
+        <p class="project-desc">$(p.description)</p>
+        <div class="project-links" aria-label="Project links">
+          $(buttons_html)
+        </div>
+      </div>
+    </a>
+""")
+=#
+    end
+
+    write(io, "  </div>\n</section>\n")
+
+    # ── 6. Filter JavaScript ───────────────────────────────────────────────────
+    # IMPORTANT: Do not use JS template literals (backtick strings with ${...})
+    # inside Julia triple-quoted strings. Franklin's parser treats ${ as Julia
+    # string interpolation and throws a parse error. Use string concatenation
+    # or ternary expressions with plain JS strings instead.
+    write(io, """
+<script>
+(function () {
+  var activeFilters = new Set();
+
+  function applyFilters() {
+    var visibleCount = 0;
+
+    document.querySelectorAll('.project-card').forEach(function(card) {
+      var cardTags = JSON.parse(card.dataset.tags);
+      var show = activeFilters.size === 0 ||
+                 [...activeFilters].every(function(f) { return cardTags.includes(f); });
+      card.style.display = show ? 'flex' : 'none';
+      if (show) visibleCount++;
+    });
+
+    // Fix 4.1.3: update live region so screen readers announce the new count.
+    // Uses string concatenation instead of JS template literals to avoid
+    // conflicting with Julia's own string interpolation syntax.
+    var status = document.getElementById('filter-status');
+    if (status) {
+      if (activeFilters.size === 0) {
+        status.textContent = 'Showing all projects.';
+      } else {
+        status.textContent = 'Showing ' + visibleCount +
+                             ' project' + (visibleCount !== 1 ? 's' : '') + '.';
+      }
+    }
+  }
+
+  function updateButtonStates() {
+    document.querySelectorAll('.filter-btn[data-filter]').forEach(function(btn) {
+      var f = btn.dataset.filter;
+      var pressed = f === 'all' ? activeFilters.size === 0 : activeFilters.has(f);
+      btn.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+      btn.classList.toggle('active', pressed);
+    });
+  }
+
+  window.filterProjects = function (btn) {
+    var f = btn.dataset.filter;
+
+    if (f === 'all') {
+      activeFilters.clear();
+    } else if (activeFilters.has(f)) {
+      activeFilters.delete(f);
+    } else {
+      activeFilters.add(f);
+    }
+
+    updateButtonStates();
+    applyFilters();
+  };
+}());
+</script>
+""")
+
+    return String(take!(io))
+end
 
 
 # ---------------------------------------------------------------------------

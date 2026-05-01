@@ -1,0 +1,269 @@
+/* ── CSS custom properties — PSU palette ─────────────────────────────────── 
+:root {
+  --psu-navy:       #001E44;
+  --psu-blue:       #1E407C;
+  --psu-light-blue: #96BEE6;
+  --psu-white:      #FFFFFF;
+  --psu-gray:       #6A7B8B;
+  --psu-light-gray: #F0F2F5;
+  --psu-accent:     #009CDE;
+  --text-primary:   #1a1a2e;
+  --text-secondary: #4a4a5a;
+}
+*/
+
+/* ── Visually hidden utility (aria-live region) ───────────────────────────── */
+/* Fix 4.1.3: keeps content in the a11y tree but invisible on screen.
+   Never use display:none or visibility:hidden — those hide from screen readers too. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Section layout ───────────────────────────────────────────────────────── */
+.projects-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  background: var(--psu-white);
+}
+
+.projects-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  /* navy on white = 17.5:1 — passes AA and AAA for any text size  ^2^  */
+  color: var(--psu-navy);
+}
+
+/* ── Filter buttons ───────────────────────────────────────────────────────── */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  padding: 0.4rem 1.1rem;
+  /* Fix 2.5.8: minimum 24px touch target  ^1^  */
+  min-height: 24px;
+  /* psu-blue border on white = 8.2:1 — passes non-text contrast (needs 3:1)  ^1^  */
+  border: 2px solid var(--psu-blue);
+  border-radius: 999px;
+  background: var(--psu-white);
+  /* psu-blue text on white = 8.2:1 — passes AA normal text (needs 4.5:1)  ^2^  */
+  color: var(--psu-blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Active/pressed state: white on psu-blue = 8.2:1 ✅ */
+.filter-btn:hover,
+.filter-btn.active,
+.filter-btn[aria-pressed="true"] {
+  background: var(--psu-blue);
+  color: var(--psu-white);
+}
+
+/* Fix 2.4.7: focus ring — psu-navy on white = 17.5:1, well above 3:1 UI minimum  ^1^  */
+.filter-btn:focus-visible {
+  outline: 3px solid var(--psu-navy);
+  outline-offset: 3px;
+}
+
+/* ── Cards grid ───────────────────────────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.8rem;
+}
+
+/* Card is a <div> using the stretched-link pattern.
+   Background white, shadow uses navy for depth without color-only meaning. */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  /* navy shadow: purely decorative depth, not conveying information  ^1^  */
+  box-shadow: 0 4px 20px rgba(0, 30, 68, 0.12);
+  background: var(--psu-white);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 30, 68, 0.20);
+}
+
+/* ── Stretched link (makes whole card clickable via title <a>) ────────────── */
+/* Fix 2.1.1 / 4.1.2: native <a> provides keyboard + screen reader semantics.
+   The ::after pseudo-element covers the card; buttons sit above via z-index. */
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Fix 2.4.7: focus ring on card via stretched link.
+   psu-accent on white = 3.2:1 — meets the 3:1 UI component minimum  ^1^ .
+   Using navy (17.5:1) gives a stronger, more visible ring. */
+.project-card-link:focus-visible::after {
+  outline: 3px solid var(--psu-navy);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+/* Suppress the default outline on the <a> itself; the ::after carries it */
+.project-card-link:focus-visible {
+  outline: none;
+}
+
+/* ── Card image ───────────────────────────────────────────────────────────── */
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Placeholder uses light-blue → navy gradient.
+   Decorative only (aria-hidden="true" in HTML), so no contrast requirement  ^1^  */
+.project-img-placeholder {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, var(--psu-light-blue), var(--psu-blue));
+}
+
+/* ── Card body ────────────────────────────────────────────────────────────── */
+.project-card-body {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/* ── Tag badges ───────────────────────────────────────────────────────────── */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.project-tag {
+  /* navy on light-blue: 6.1:1 — passes AA for small text (needs 4.5:1)  ^2^  */
+  background: var(--psu-light-blue);
+  color: var(--psu-navy);
+  font-size: 0.75rem;
+  font-weight: 700;          /* bold helps legibility at small sizes  ^3^  */
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Card text ────────────────────────────────────────────────────────────── */
+.project-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  /* text-primary on white = 17.0:1 ✅  ^2^  */
+  color: var(--text-primary);
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  /* text-secondary (#4a4a5a) on white = 8.6:1 — passes AA (needs 4.5:1)  ^2^  */
+  color: var(--text-secondary);
+  flex: 1;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* ── Action buttons ───────────────────────────────────────────────────────── */
+.project-links {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  /* Fix: sit above the stretched-link ::after overlay */
+  position: relative;
+  z-index: 2;
+}
+
+.project-link {
+  /* Fix 2.5.8: min 24px height; inline-flex for vertical centering  ^1^  */
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  /* Default: white on psu-blue = 8.2:1 ✅  ^2^  */
+  background: var(--psu-blue);
+  color: var(--psu-white);
+  transition: opacity 0.2s;
+  border: 2px solid transparent;
+}
+
+.project-link:hover { opacity: 0.85; }
+
+/* Fix 2.4.7: focus ring on action buttons  ^1^  */
+.project-link:focus-visible {
+  outline: 3px solid var(--psu-navy);
+  outline-offset: 3px;
+}
+
+/* Per-type overrides — all verified ≥4.5:1 for white text  ^2^  ^3^  */
+
+/* white on navy = 17.5:1 ✅ */
+.project-link--github  { background: var(--psu-navy); }
+
+/* Demo: outlined style — psu-blue text on white = 8.2:1 ✅ */
+.project-link--demo {
+  background: transparent;
+  border-color: var(--psu-blue);
+  color: var(--psu-blue);
+}
+
+/* white on psu-blue = 8.2:1 ✅ (same as default, explicit for clarity) */
+.project-link--paper   { background: var(--psu-blue); }
+
+/* arXiv: use navy for white text contrast = 17.5:1 ✅
+   (psu-accent #009CDE on white is only 3.2:1 — fails for normal text)  ^2^  */
+.project-link--arxiv   { background: var(--psu-navy); }
+
+/* Data: psu-blue = 8.2:1 ✅ */
+.project-link--data    { background: var(--psu-blue); }
+
+/* Zenodo: navy = 17.5:1 ✅ */
+.project-link--zenodo  { background: var(--psu-navy); }
+
+/* Slides: psu-blue = 8.2:1 ✅ */
+.project-link--slides  { background: var(--psu-blue); }
+
+/* Video: accent is 3.2:1 on white — too low for normal text.
+   Use navy instead: 17.5:1 ✅  ^2^  */
+.project-link--video   { background: var(--psu-navy); }

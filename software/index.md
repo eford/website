@@ -18,6 +18,12 @@ Our group develops and maintains several open-source software packages, primaril
 {{software_cards_from_dir demographics}}
 ~~~
 
+## Astrostatistics
+
+~~~
+{{software_cards_from_dir astrostats}}
+~~~
+
 ## Extremely Precise Radial Velocities
 
 ~~~

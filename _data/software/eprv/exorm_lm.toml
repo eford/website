@@ -1,0 +1,4 @@
+name        = "Fixed Effects Linear Model of Line-by-Line Shape Changes"
+url         = "https://github.com/Joesalzer/ExoRV_LM"
+description = "R code implementing Fixed Effects Linear Model from Salzer et al. (2025)"
+sort_order  = 6

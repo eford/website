@@ -1,12 +1,13 @@
-{{insert /head}}
-{{insert /nav}}
+{{insert head.html}}
+{{insert nav.html}}
 <main class="site-main">
   <div class="franklin-content">
+
+
     <h1>Tag: {{fill tag}}</h1>
-    <ul>
-    {{taglist}}
-    </ul>
-  </div>
-</main>
+    <p>Pages tagged <em>{{fill tag}}</em>:</p>
+    <div class="tagpage">
+      {{taglist}}
+    </div>
 {{insert /page_foot.html}}
 
