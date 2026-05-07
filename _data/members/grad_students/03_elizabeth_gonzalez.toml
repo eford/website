@@ -1,7 +1,7 @@
 name         = "Elizabeth Gonzalez"
 display_name  = "Elizabeth Gonzalez"
 image         = "/assets/images/people/elizabeth_gonzalez.jpg"
-profile_url   = "https://astroelizabeth.weebly.com/"
+profile_url   = "https://elizgonz.github.io/"
 role          = "PhD Student, NSF Graduate Research Fellow"
 bio           = "Developing stellar variability mitigation techniques for extreme precision radial velocity, including probing the effects of granulation on RV measurements using NEID observations during solar eclipses."
 heading_level = "h3"
