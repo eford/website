@@ -1,0 +1,4 @@
+name        = "PlanetSEmu"
+url         = "https://github.com/kydpotter/PlanetSEmu"
+description = "Emulating the distribution of planetary architectures."
+sort_order  = 2
